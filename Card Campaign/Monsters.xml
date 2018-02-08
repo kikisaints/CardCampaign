@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<catalog>
+  <monster id="Aboleth">
+    <IMG>Assets/Monsters/Aboleth.png</IMG>
+    <Disc>
+      Aboleths were fish-like amphibians of immense size, often reaching 20 feet (6.1 meters) in length and weighing up to 6,500 pounds (3000 kilograms), though they continued to grow as they aged and some fantastically ancient specimens might reach 40 feet (12.2 meters) in length. They resembled a bizarre eel, with long, tubular bodies, as well as a tail at one end and two fins near the head and another along the back. Aboleths' mouths were lamprey-like, filled with serrated, jawless teeth.
+      Aboleth underbellies were often orange-pink, while their topsides were typically sea-green. A little bit back from the head were four long tentacles, two sprouting from across each other on the top, and two more of the same on the underbelly. Their heads were roughly triangular-shaped, with a spherical, somewhat beak-like nose. Above the nose were their three eyes, each one set atop the other. Tendrils and a few shorter tentacles dangled from the bottom of the head. Four blue-black slime-secreting orifices lined the bottom of their bodies. Aboleth blood was green and thick, oozing like sap.
+      Aboleths breathed through a thick gray mucus-like substance, which covered their body and which they exuded from four pulsating organs along their body as they moved. If robbed of the ability to exude this slime, an aboleth would suffocate in water or on land alike. As such, an aboleth had to take care of its mucus. Out of the water, an aboleth's membrane-like skin dried out quickly, but this did not prove fatal in and of itself. Instead, the aboleth would eventually enter a state of suspended animation, called long dreaming, a fate considered far worse than simply dying amongst aboleths. During this process, the so-hampered aboleth formed a tough, waterproof membrane. However, if this membrane was pierced, liquid flooded out and death was usually not far off for the aboleth.
+      Aboleths did not die of old age and so lived on indefinitely, barring violence or disease.
+    </Disc>
+    <Size>Large</Size>
+    <Type>Aberration</Type>
+    <Alignment>Lawful Evil</Alignment>
+    <AC>17 (natural armor)</AC>
+    <HP>135 (18d10 + 36)</HP>
+    <Speed>10ft, Swim 30ft</Speed>
+    <STR>21</STR>
+    <DEX>9</DEX>
+    <CON>15</CON>
+    <INT>18</INT>
+    <WIS>15</WIS>
+    <CHA>18</CHA>
+    <SavingThrows>
+      <CON>+6</CON>
+      <INT>+8</INT>
+      <WIS>+6</WIS>
+    </SavingThrows>
+    <Skills>
+      <History>+12</History>
+      <Perception>+10</Perception>
+    </Skills>
+    <Senses>
+      <Darkvision>120ft</Darkvision>
+      <PassivePerception>20</PassivePerception>
+    </Senses>
+    <Languages>Deep Speech, Aboleth, Aquan, Undercommon, Telepathy 120ft</Languages>
+    <FavoredTerrain>Underground</FavoredTerrain>
+    <Challenge>10 (5900XP)</Challenge>
+    <PassiveAbilities>
+      <Amphibious>The aboleth can breathe air and water.</Amphibious>
+      <MucousCloud>While underwater, the aboleth is surrounded by transformative mucus. A creature that touches the aboleth or that hits it with a melee attack while within 5 feet of it must make a DC 14 Constitution saving throw. On a failure, the creature is diseased for 1d4 hours. The diseased creature can breathe only underwater.</MucousCloud>
+      <ProbingTelepathy>If a creature communicates telepathically with the aboleth, the aboleth learns the creature's greatest desires if the aboleth can see the creature.</ProbingTelepathy>
+    </PassiveAbilities>
+    <Actions>
+      <Multiattack>The aboleth makes three tentacle attacks.</Multiattack>
+      <Tentacle>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease. After 1 minute, the diseased creature's skin becomes translucent and slimy, the creature can't regain hit points unless it is underwater, and the disease can be removed only by heal or another disease-curing spell of 6th level or higher. When the creature is outside a body of water, it takes 6 (1d12) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed.</Tentacle>
+      <Tail>Melee Weapon Attack: +9 to hit, reach 10 ft. one target. Hit: 15 (3d6 + 5) bludgeoning damage.</Tail>
+      <Enslave>(3/Day) The aboleth targets one creature it can see within 30 feet of it. The target must succeed on a DC 14 Wisdom saving throw or be magically CHARMED by the aboleth until the aboleth dies or until it is on a different plane of existence from the target. The CHARMED target is under the aboleth's control and can't take reactions, and the aboleth and the target can communicate telepathically with each other over any distance. Whenever the CHARMED target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the aboleth.</Enslave>
+    </Actions>
+    <LegendaryActions>
+      <Info>The aboleth can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The aboleth regains spent legendary actions at the start of its turn.</Info>
+      <Detect></Detect>
+      <TailSwipe></TailSwipe>
+      <PsychicDrain>(Costs 2 Actions) One creature CHARMED by the aboleth takes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes.</PsychicDrain>
+    </LegendaryActions>
+  </monster>
+</catalog>

@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="Card_Campaign.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Card_Campaign"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    
+    <Page.Resources>
+        <AcrylicBrush x:Key="TopBarBackground"
+            BackgroundSource="Backdrop"
+            TintColor="#ff000000"
+            TintOpacity="0.6"
+            FallbackColor="#ff000000"/>
+        
+        <SolidColorBrush x:Key="PivotHeaderItemForegroundSelected" Color="{ThemeResource SystemAccentColor}"/>
+        <SolidColorBrush x:Key="GridViewItemRevealBorderBrush" Color="Transparent"/>
+        <Thickness x:Key="GridViewItemRevealBorderThemeThickness">0</Thickness>
+        <SolidColorBrush x:Key="GridViewItemRevealBackground" Color="Transparent"/>
+    </Page.Resources>
+
+    <Grid x:Name="RootGrid" Background="{ThemeResource SystemControlTransparentBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+           
+            <TextBlock Style="{ThemeResource HeaderTextBlockStyle}" Foreground="#ff363636" Text="Card Campaign" Margin="5" FontSize="40"/>
+            <Pivot Grid.Row="1" Style="{StaticResource PivotStyle1}" Margin="0,-50,0,0" FontFamily="Segoe UI">
+                <PivotItem Header="Campagins">
+                    <GridView ItemClick="GridViewRoot_ItemClick" IsItemClickEnabled="True" ItemContainerStyle="{StaticResource noTiltListItem}" Margin="0,20,0,0" 
+                              ScrollViewer.VerticalScrollBarVisibility="Visible" x:Name="GridViewRoot" FontFamily="Segoe UI">
+                        <local:NewCampaignCard x:Name="newCampaignCard" Width="247" Height="373" ToolTipService.ToolTip="New Campaign"/>
+                    </GridView>
+                </PivotItem>
+                <PivotItem Header="Characters">
+
+                </PivotItem>
+            </Pivot>
+        </Grid>
+    </Grid>
+</Page>

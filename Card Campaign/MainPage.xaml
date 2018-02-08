@@ -1,0 +1,89 @@
+﻿<Page
+    x:Class="Card_Campaign.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Card_Campaign"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <SolidColorBrush x:Key="NavigationViewItemForeground" Color="White"/>
+        <SolidColorBrush x:Key="NavigationViewSelectionIndicatorForeground" Color="White"/>
+
+        <SolidColorBrush x:Key="NavigationViewDefaultPaneBackground"
+                         Color="{ThemeResource SystemAccentColor}"/>
+        <SolidColorBrush x:Key="NavigationViewExpandedPaneBackground"
+                         Color="{ThemeResource SystemAccentColor}"/>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Frame x:Name="mainRefreshFrame">
+            <NavigationView x:Name="NavView" RequestedTheme="Dark" 
+                        OpenPaneLength="280" 
+                        CompactModeThresholdWidth="160" 
+                        ExpandedModeThresholdWidth="1920"
+                        Background="#ffececec" Margin="0,-1,0,0"
+                        ItemInvoked="NavView_ItemInvoked"
+                        Loaded="NavView_Loaded"
+                        IsSettingsVisible="True"
+                        SelectionChanged="NavView_SelectionChanged">
+                <!--ItemInvoked="NavView_ItemInvoked"
+                    SelectionChanged="NavView_SelectionChanged"
+                    Loaded="NavView_Loaded">-->
+
+                <NavigationView.MenuItems>
+                    <NavigationViewItem Content="Home" Tag="home" Style="{StaticResource NavViewItemMainStyle}">
+                        <NavigationViewItem.Icon>
+                            <FontIcon Glyph="&#xE10F;"  FontSize="18" Height="40" Width="40"/>
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
+                    <NavigationViewItemSeparator/>
+                    <NavigationViewItem Style="{StaticResource NavViewItemMainStyle}" Content="Enemy Log" Tag="enemylog">
+                        <NavigationViewItem.Icon>
+                            <FontIcon Glyph="&#x1f47f;" FontFamily="Segoe UI Symbol" FontSize="18" Height="40" Width="40"/>
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
+                    <NavigationViewItem Style="{StaticResource NavViewItemMainStyle}" Content="Spell Log" Tag="spelllog">
+                        <NavigationViewItem.Icon>
+                            <FontIcon Glyph="&#x1f4d6;" FontFamily="Segoe UI Symbol" FontSize="18" Height="40" Width="40"/>
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
+                </NavigationView.MenuItems>
+
+                <NavigationView.HeaderTemplate>
+                    <DataTemplate>
+                        <Grid x:Name="GridSearchBox" Background="{ThemeResource SystemControlBackgroundAltHighBrush}" Height="48" Visibility="Visible">
+                            <AutoSuggestBox VerticalAlignment="Center" HorizontalAlignment="Left" PlaceholderText="Search this Page" x:Name="ASB" QueryIcon="Find" MaxWidth="330" MinWidth="230" Margin="20,5,0,0"/>
+                        </Grid>
+                    </DataTemplate>
+                </NavigationView.HeaderTemplate>
+
+                <NavigationView.PaneFooter>
+                    <!--<NavigationViewItem Content="Settings" Tag="settings">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE713;" FontSize="18" Height="40" Width="40"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>-->
+                </NavigationView.PaneFooter>
+
+                <Frame x:Name="ContentFrame" Margin="24">
+                    <Frame.ContentTransitions>
+                        <TransitionCollection>
+                            <NavigationThemeTransition/>
+                        </TransitionCollection>
+                    </Frame.ContentTransitions>
+                </Frame>
+
+            </NavigationView>
+        </Frame>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1" x:Name="OverrideTitleBar" HorizontalAlignment="Stretch" Height="47" Width="Auto" 
+                  VerticalAlignment="Top" Background="{ThemeResource SystemControlBackgroundAltHighBrush}"/>
+        </Grid>
+    </Grid>
+</Page>

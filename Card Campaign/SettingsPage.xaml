@@ -1,0 +1,104 @@
+﻿<Page
+    x:Class="Card_Campaign.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Card_Campaign"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource SystemControlTransparentBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Style="{ThemeResource HeaderTextBlockStyle}" Foreground="#ff363636" Text="Settings" Margin="5" FontSize="40"/>
+            <Grid Grid.Row="1" HorizontalAlignment="Left" Margin="0,20,0,0">
+                <StackPanel Orientation="Vertical" Width="300">
+                    <TextBlock Text="About this app" Foreground="#ff363636" FontSize="20"/>
+                    <TextBlock Text="Card Campaign Application © 2017 Kiki Saintonge" TextWrapping="WrapWholeWords" Foreground="#ff636363" FontStyle="Italic" Margin="0,0,0,5"/>
+                    <TextBlock Text="Dungeons and Dragons" Foreground="#ff636363" FontStyle="Italic"/>
+                    <TextBlock Text="© 1995-2017 Wizards of the Coast LLC, a subsidiary of Hasbro, Inc. All Rights Reserved." TextWrapping="WrapWholeWords" Foreground="#ff636363" FontStyle="Italic"/>
+                    <TextBlock Text="Accent Color" Foreground="#ff363636" FontSize="20" Margin="0,10,0,0"/>
+                    <StackPanel Orientation="Horizontal" Width="280" Margin="0,5,0,0">
+                        <GridView x:Name="ColorGrid" ItemClick="ColorGrid_ItemClick" IsItemClickEnabled="True" IsMultiSelectCheckBoxEnabled="True"
+                                  SelectionMode="Single" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Width="280">
+                            <GridViewItem x:Name="CardRed">                                
+                                <Grid>
+                                    <Rectangle x:Name="CardRedColor" Fill="#ffae3737" Width="50" Height="50" Margin="5"/>
+                                    <StackPanel Background="White" Width="20" Height="12" Orientation="Horizontal" BorderBrush="White" Margin="5" 
+                                                BorderThickness="1" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                                        <Rectangle x:Name="CardRedColor_Hover" Fill="#90ae3737" Width="10" Height="10"/>
+                                        <Rectangle x:Name="CardRedColor_Pressed" Fill="#ff4b1515" Width="10" Height="10"/>
+                                    </StackPanel>
+                                </Grid>
+                            </GridViewItem>
+                            <GridViewItem x:Name="CardGreen">
+                                <Grid>
+                                    <Rectangle x:Name="CardGreenColor" Fill="#ff2f5b3a" Width="50" Height="50" Margin="5"/>
+                                    <StackPanel Background="White" Width="20" Height="12" Orientation="Horizontal" BorderBrush="White" Margin="5" 
+                                                BorderThickness="1" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                                        <Rectangle x:Name="CardGreenColor_Hover" Fill="#90005515" Width="10" Height="10"/>
+                                        <Rectangle x:Name="CardGreenColor_Pressed" Fill="#ff0a3114" Width="10" Height="10"/>
+                                    </StackPanel>
+                                </Grid>
+                            </GridViewItem>
+                            <GridViewItem x:Name="CardYellow">                                
+                                <Grid>
+                                    <Rectangle x:Name="CardYellowColor" Fill="#fff7b72f" Width="50" Height="50" Margin="5"/>
+                                    <StackPanel Background="White" Width="20" Height="12" Orientation="Horizontal" BorderBrush="White" Margin="5" 
+                                                BorderThickness="1" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                                        <Rectangle x:Name="CardYellowColor_Hover" Fill="#90b68929" Width="10" Height="10"/>
+                                        <Rectangle x:Name="CardYellowColor_Pressed" Fill="#ff6b5119" Width="10" Height="10"/>
+                                    </StackPanel>
+                                </Grid>
+                            </GridViewItem>
+                            <GridViewItem x:Name="CardPurple">                                
+                                <Grid>
+                                    <Rectangle x:Name="CardPurpleColor" Fill="#ff7200ff" Width="50" Height="50" Margin="5"/>
+                                    <StackPanel Background="White" Width="20" Height="12" Orientation="Horizontal" BorderBrush="White" Margin="5" 
+                                                BorderThickness="1" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                                        <Rectangle x:Name="CardPurpleColor_Hover" Fill="#906726b8" Width="10" Height="10"/>
+                                        <Rectangle x:Name="CardPurpleColor_Pressed" Fill="#ff4a1e80" Width="10" Height="10"/>
+                                    </StackPanel>
+                                </Grid>
+                            </GridViewItem>
+                            <GridViewItem x:Name="CardGray">                                
+                                <Grid>
+                                    <Rectangle x:Name="CardGrayColor" Fill="#ff3c3c3c" Width="50" Height="50" Margin="5"/>
+                                    <StackPanel Background="White" Width="20" Height="12" Orientation="Horizontal" BorderBrush="White" Margin="5" 
+                                                BorderThickness="1" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                                        <Rectangle x:Name="CardGrayColor_Hover" Fill="#902a2929" Width="10" Height="10"/>
+                                        <Rectangle x:Name="CardGrayColor_Pressed" Fill="#ff101010" Width="10" Height="10"/>
+                                    </StackPanel>
+                                </Grid>
+                            </GridViewItem>
+                            <GridViewItem x:Name="CardBrown">                                
+                                <Grid>
+                                    <Rectangle x:Name="CardBrownColor" Fill="#ff713f00" Width="50" Height="50" Margin="5"/>
+                                    <StackPanel Background="White" Width="20" Height="12" Orientation="Horizontal" BorderBrush="White" Margin="5" 
+                                                BorderThickness="1" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                                        <Rectangle x:Name="CardBrownColor_Hover" Fill="#90523107" Width="10" Height="10"/>
+                                        <Rectangle x:Name="CardBrownColor_Pressed" Fill="#ff382309" Width="10" Height="10"/>
+                                    </StackPanel>
+                                </Grid>
+                            </GridViewItem>
+                            <GridViewItem x:Name="CardBlue">                                
+                                <Grid>
+                                    <Rectangle x:Name="CardBlueColor" Fill="#ff088ed5" Width="50" Height="50" Margin="5"/>
+                                    <StackPanel Background="White" Width="20" Height="12" Orientation="Horizontal" BorderBrush="White" Margin="5" 
+                                                BorderThickness="1" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                                        <Rectangle x:Name="CardBlueColor_Hover" Fill="#901a719f" Width="10" Height="10"/>
+                                        <Rectangle x:Name="CardBlueColor_Pressed" Fill="#ff0b5176" Width="10" Height="10"/>
+                                    </StackPanel>
+                                </Grid>
+                            </GridViewItem>
+                        </GridView>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
