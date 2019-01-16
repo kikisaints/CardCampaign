@@ -22,6 +22,7 @@ namespace Card_Campaign
     /// </summary>
     sealed partial class App : Application
     {
+        Logs.MonsterLog bestiary;
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -31,6 +32,8 @@ namespace Card_Campaign
             RequestedTheme = ApplicationTheme.Light;
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
+            bestiary = new Logs.MonsterLog();
         }
 
         /// <summary>

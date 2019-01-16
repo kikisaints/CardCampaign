@@ -5,6 +5,7 @@
     xmlns:local="using:Card_Campaign"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local1="using:Card_Campaign.Controls"
     mc:Ignorable="d">
     
     <Page.Resources>
@@ -30,10 +31,12 @@
             <TextBlock Style="{ThemeResource HeaderTextBlockStyle}" Foreground="#ff363636" Text="Card Campaign" Margin="5" FontSize="40"/>
             <Pivot Grid.Row="1" Style="{StaticResource PivotStyle1}" Margin="0,-50,0,0" FontFamily="Segoe UI">
                 <PivotItem Header="Campagins">
-                    <GridView x:ConnectionId='2'                                    IsItemClickEnabled="True" ItemContainerStyle="{StaticResource noTiltListItem}" Margin="0,20,0,0" 
-                              ScrollViewer.VerticalScrollBarVisibility="Visible" x:Name="GridViewRoot" FontFamily="Segoe UI">
-                        <local:NewCampaignCard x:ConnectionId='3' x:Name="newCampaignCard" Width="247" Height="373" ToolTipService.ToolTip="New Campaign"/>
-                    </GridView>
+                    <Grid ScrollViewer.VerticalScrollBarVisibility="Visible">
+                        <GridView x:ConnectionId='2'                                    IsItemClickEnabled="True" ScrollViewer.IsVerticalRailEnabled="False"
+                                  ItemContainerStyle="{StaticResource noTiltListItem}" Margin="0,20,0,0" x:Name="GridViewRoot" FontFamily="Segoe UI" >
+                            <local:NewCampaignCardBlank x:ConnectionId='3' x:Name="newCampaignCard" ToolTipService.ToolTip="New Campaign" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        </GridView>
+                    </Grid>
                 </PivotItem>
                 <PivotItem Header="Characters">
 

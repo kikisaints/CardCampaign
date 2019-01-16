@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>d8900abf-160c-45e6-824b-ef911b2fbaae</PackageIdentityName>
     <PackageIdentityPublisher>CN=kisai</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\DnDCardCampaign\Project\Card Campaign\Card Campaign\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\DnDCardCampaign\Project\CardCampaignRepo\Card Campaign\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\DnDCardCampaign\Project\Card Campaign\Card Campaign\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>D:\DnDCardCampaign\Project\CardCampaignRepo\Card Campaign\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\DnDCardCampaign\Project\Card Campaign\Card Campaign\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\DnDCardCampaign\Project\CardCampaignRepo\Card Campaign\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\Card Campaign\Card Campaign\bin\x86\Debug\Card Campaign.exe">
+    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\CardCampaignRepo\Card Campaign\bin\x86\Debug\Card Campaign.exe">
       <PackagePath>entrypoint\Card Campaign.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kiki\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.0.1\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
@@ -520,56 +520,56 @@
     <AppxPackagedFile Include="C:\Users\Kiki\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.0.1\runtimes\win10-x86\lib\uap10.0.15138\netstandard.dll">
       <PackagePath>netstandard.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\Card Campaign\Card Campaign\Monsters.xml">
+    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\CardCampaignRepo\Card Campaign\Monsters.xml">
       <PackagePath>Monsters.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\Card Campaign\Card Campaign\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\CardCampaignRepo\Card Campaign\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\Card Campaign\Card Campaign\Assets\RedDragon_Larger.png">
+    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\CardCampaignRepo\Card Campaign\Assets\RedDragon_Larger.png">
       <PackagePath>Assets\RedDragon_Larger.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\Card Campaign\Card Campaign\Assets\RedDragon_Wider.png">
+    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\CardCampaignRepo\Card Campaign\Assets\RedDragon_Wider.png">
       <PackagePath>Assets\RedDragon_Wider.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\Card Campaign\Card Campaign\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\CardCampaignRepo\Card Campaign\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\Card Campaign\Card Campaign\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\CardCampaignRepo\Card Campaign\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\Card Campaign\Card Campaign\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\CardCampaignRepo\Card Campaign\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\Card Campaign\Card Campaign\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\CardCampaignRepo\Card Campaign\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\Card Campaign\Card Campaign\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\CardCampaignRepo\Card Campaign\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\Card Campaign\Card Campaign\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\CardCampaignRepo\Card Campaign\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\Card Campaign\Card Campaign\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\CardCampaignRepo\Card Campaign\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\Card Campaign\Card Campaign\bin\x86\Debug\Card Campaign.xr.xml">
+    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\CardCampaignRepo\Card Campaign\bin\x86\Debug\Card Campaign.xr.xml">
       <PackagePath>Card Campaign.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\Card Campaign\Card Campaign\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\CardCampaignRepo\Card Campaign\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\Card Campaign\Card Campaign\bin\x86\Debug\Core\Card Campaign.exe">
+    <AppxPackagedFile Include="D:\DnDCardCampaign\Project\CardCampaignRepo\Card Campaign\bin\x86\Debug\Core\Card Campaign.exe">
       <PackagePath>Card Campaign.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

@@ -30,7 +30,7 @@
             </ComboBox>            
             <StackPanel Orientation="Horizontal" Grid.Column="2">
                 <AppBarButton Margin="0,15,2,15" Style="{ThemeResource RefreshButton}" Icon="Refresh" ToolTipService.ToolTip="Check for Updates"/>
-                <AppBarButton Margin="2,15,15,15" Style="{ThemeResource RefreshButton}" ToolTipService.ToolTip="Add Custom Enemy">
+                <AppBarButton Margin="20,15,15,15" Style="{ThemeResource RefreshButton}" ToolTipService.ToolTip="Add Custom Spell">
                     <AppBarButton.Icon>
                         <FontIcon Glyph="&#xE82E;"/>
                     </AppBarButton.Icon>

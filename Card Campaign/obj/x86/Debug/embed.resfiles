@@ -1,6 +1,7 @@
 App.xbf
 CampaignCard.xbf
 Controls\BaseCard.xbf
+Controls\BlankCampaignCard.xbf
 Controls\MonsterTag.xbf
 Controls\NewCampaignCard.xbf
 Controls\PlayerTag.xbf

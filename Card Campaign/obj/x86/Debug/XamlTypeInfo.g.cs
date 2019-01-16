@@ -180,7 +180,7 @@ namespace Card_Campaign.Card_Campaign_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[23];
+            _typeNameTable = new string[24];
             _typeNameTable[0] = "Windows.UI.Color";
             _typeNameTable[1] = "System.ValueType";
             _typeNameTable[2] = "Object";
@@ -190,22 +190,23 @@ namespace Card_Campaign.Card_Campaign_XamlTypeInfo
             _typeNameTable[6] = "Card_Campaign.CampaignCard";
             _typeNameTable[7] = "Windows.UI.Xaml.Controls.GridView";
             _typeNameTable[8] = "Card_Campaign.BaseCard";
-            _typeNameTable[9] = "Card_Campaign.NewCampaignCard";
-            _typeNameTable[10] = "String";
-            _typeNameTable[11] = "Card_Campaign.HomePage";
-            _typeNameTable[12] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[13] = "Card_Campaign.MainPage";
-            _typeNameTable[14] = "Windows.UI.Xaml.Controls.Frame";
-            _typeNameTable[15] = "Card_Campaign.MonsterTag";
-            _typeNameTable[16] = "Card_Campaign.MonsterLogPage";
-            _typeNameTable[17] = "Card_Campaign.WrapPanel";
-            _typeNameTable[18] = "Windows.UI.Xaml.Controls.Panel";
-            _typeNameTable[19] = "Card_Campaign.PlayerTag";
-            _typeNameTable[20] = "Boolean";
-            _typeNameTable[21] = "Card_Campaign.SettingsPage";
-            _typeNameTable[22] = "Card_Campaign.SpellLogPage";
+            _typeNameTable[9] = "Card_Campaign.Controls.BlankCampaignCard";
+            _typeNameTable[10] = "Card_Campaign.NewCampaignCardBlank";
+            _typeNameTable[11] = "String";
+            _typeNameTable[12] = "Card_Campaign.HomePage";
+            _typeNameTable[13] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[14] = "Card_Campaign.MainPage";
+            _typeNameTable[15] = "Windows.UI.Xaml.Controls.Frame";
+            _typeNameTable[16] = "Card_Campaign.MonsterTag";
+            _typeNameTable[17] = "Card_Campaign.MonsterLogPage";
+            _typeNameTable[18] = "Card_Campaign.WrapPanel";
+            _typeNameTable[19] = "Windows.UI.Xaml.Controls.Panel";
+            _typeNameTable[20] = "Card_Campaign.PlayerTag";
+            _typeNameTable[21] = "Boolean";
+            _typeNameTable[22] = "Card_Campaign.SettingsPage";
+            _typeNameTable[23] = "Card_Campaign.SpellLogPage";
 
-            _typeTable = new global::System.Type[23];
+            _typeTable = new global::System.Type[24];
             _typeTable[0] = typeof(global::Windows.UI.Color);
             _typeTable[1] = typeof(global::System.ValueType);
             _typeTable[2] = typeof(global::System.Object);
@@ -215,20 +216,21 @@ namespace Card_Campaign.Card_Campaign_XamlTypeInfo
             _typeTable[6] = typeof(global::Card_Campaign.CampaignCard);
             _typeTable[7] = typeof(global::Windows.UI.Xaml.Controls.GridView);
             _typeTable[8] = typeof(global::Card_Campaign.BaseCard);
-            _typeTable[9] = typeof(global::Card_Campaign.NewCampaignCard);
-            _typeTable[10] = typeof(global::System.String);
-            _typeTable[11] = typeof(global::Card_Campaign.HomePage);
-            _typeTable[12] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[13] = typeof(global::Card_Campaign.MainPage);
-            _typeTable[14] = typeof(global::Windows.UI.Xaml.Controls.Frame);
-            _typeTable[15] = typeof(global::Card_Campaign.MonsterTag);
-            _typeTable[16] = typeof(global::Card_Campaign.MonsterLogPage);
-            _typeTable[17] = typeof(global::Card_Campaign.WrapPanel);
-            _typeTable[18] = typeof(global::Windows.UI.Xaml.Controls.Panel);
-            _typeTable[19] = typeof(global::Card_Campaign.PlayerTag);
-            _typeTable[20] = typeof(global::System.Boolean);
-            _typeTable[21] = typeof(global::Card_Campaign.SettingsPage);
-            _typeTable[22] = typeof(global::Card_Campaign.SpellLogPage);
+            _typeTable[9] = typeof(global::Card_Campaign.Controls.BlankCampaignCard);
+            _typeTable[10] = typeof(global::Card_Campaign.NewCampaignCardBlank);
+            _typeTable[11] = typeof(global::System.String);
+            _typeTable[12] = typeof(global::Card_Campaign.HomePage);
+            _typeTable[13] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[14] = typeof(global::Card_Campaign.MainPage);
+            _typeTable[15] = typeof(global::Windows.UI.Xaml.Controls.Frame);
+            _typeTable[16] = typeof(global::Card_Campaign.MonsterTag);
+            _typeTable[17] = typeof(global::Card_Campaign.MonsterLogPage);
+            _typeTable[18] = typeof(global::Card_Campaign.WrapPanel);
+            _typeTable[19] = typeof(global::Windows.UI.Xaml.Controls.Panel);
+            _typeTable[20] = typeof(global::Card_Campaign.PlayerTag);
+            _typeTable[21] = typeof(global::System.Boolean);
+            _typeTable[22] = typeof(global::Card_Campaign.SettingsPage);
+            _typeTable[23] = typeof(global::Card_Campaign.SpellLogPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -266,15 +268,16 @@ namespace Card_Campaign.Card_Campaign_XamlTypeInfo
         private object Activate_4_DropShadowEffect() { return new global::Card_Campaign.DropShadowEffect(); }
         private object Activate_6_CampaignCard() { return new global::Card_Campaign.CampaignCard(); }
         private object Activate_8_BaseCard() { return new global::Card_Campaign.BaseCard(); }
-        private object Activate_9_NewCampaignCard() { return new global::Card_Campaign.NewCampaignCard(); }
-        private object Activate_11_HomePage() { return new global::Card_Campaign.HomePage(); }
-        private object Activate_13_MainPage() { return new global::Card_Campaign.MainPage(); }
-        private object Activate_15_MonsterTag() { return new global::Card_Campaign.MonsterTag(); }
-        private object Activate_16_MonsterLogPage() { return new global::Card_Campaign.MonsterLogPage(); }
-        private object Activate_17_WrapPanel() { return new global::Card_Campaign.WrapPanel(); }
-        private object Activate_19_PlayerTag() { return new global::Card_Campaign.PlayerTag(); }
-        private object Activate_21_SettingsPage() { return new global::Card_Campaign.SettingsPage(); }
-        private object Activate_22_SpellLogPage() { return new global::Card_Campaign.SpellLogPage(); }
+        private object Activate_9_BlankCampaignCard() { return new global::Card_Campaign.Controls.BlankCampaignCard(); }
+        private object Activate_10_NewCampaignCardBlank() { return new global::Card_Campaign.NewCampaignCardBlank(); }
+        private object Activate_12_HomePage() { return new global::Card_Campaign.HomePage(); }
+        private object Activate_14_MainPage() { return new global::Card_Campaign.MainPage(); }
+        private object Activate_16_MonsterTag() { return new global::Card_Campaign.MonsterTag(); }
+        private object Activate_17_MonsterLogPage() { return new global::Card_Campaign.MonsterLogPage(); }
+        private object Activate_18_WrapPanel() { return new global::Card_Campaign.WrapPanel(); }
+        private object Activate_20_PlayerTag() { return new global::Card_Campaign.PlayerTag(); }
+        private object Activate_22_SettingsPage() { return new global::Card_Campaign.SettingsPage(); }
+        private object Activate_23_SpellLogPage() { return new global::Card_Campaign.SpellLogPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -341,89 +344,96 @@ namespace Card_Campaign.Card_Campaign_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 9:   //  Card_Campaign.NewCampaignCard
+            case 9:   //  Card_Campaign.Controls.BlankCampaignCard
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_9_NewCampaignCard;
+                userType.Activator = Activate_9_BlankCampaignCard;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  Card_Campaign.NewCampaignCardBlank
+                userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_10_NewCampaignCardBlank;
                 userType.AddMemberName("PlayerName");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  String
+            case 11:   //  String
                 xamlType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  Card_Campaign.HomePage
+            case 12:   //  Card_Campaign.HomePage
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_HomePage;
+                userType.Activator = Activate_12_HomePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  Windows.UI.Xaml.Controls.Page
+            case 13:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 13:   //  Card_Campaign.MainPage
+            case 14:   //  Card_Campaign.MainPage
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_MainPage;
+                userType.Activator = Activate_14_MainPage;
                 userType.AddMemberName("FrameRef");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  Windows.UI.Xaml.Controls.Frame
+            case 15:   //  Windows.UI.Xaml.Controls.Frame
                 xamlType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 15:   //  Card_Campaign.MonsterTag
+            case 16:   //  Card_Campaign.MonsterTag
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_15_MonsterTag;
+                userType.Activator = Activate_16_MonsterTag;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 16:   //  Card_Campaign.MonsterLogPage
+            case 17:   //  Card_Campaign.MonsterLogPage
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_16_MonsterLogPage;
+                userType.Activator = Activate_17_MonsterLogPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  Card_Campaign.WrapPanel
+            case 18:   //  Card_Campaign.WrapPanel
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Panel"));
-                userType.Activator = Activate_17_WrapPanel;
+                userType.Activator = Activate_18_WrapPanel;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  Windows.UI.Xaml.Controls.Panel
+            case 19:   //  Windows.UI.Xaml.Controls.Panel
                 xamlType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 19:   //  Card_Campaign.PlayerTag
+            case 20:   //  Card_Campaign.PlayerTag
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_19_PlayerTag;
+                userType.Activator = Activate_20_PlayerTag;
                 userType.AddMemberName("PlayerName");
                 userType.AddMemberName("IsCanceled");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 20:   //  Boolean
+            case 21:   //  Boolean
                 xamlType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 21:   //  Card_Campaign.SettingsPage
+            case 22:   //  Card_Campaign.SettingsPage
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_21_SettingsPage;
+                userType.Activator = Activate_22_SettingsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 22:   //  Card_Campaign.SpellLogPage
+            case 23:   //  Card_Campaign.SpellLogPage
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_22_SpellLogPage;
+                userType.Activator = Activate_23_SpellLogPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -482,14 +492,14 @@ namespace Card_Campaign.Card_Campaign_XamlTypeInfo
             var that = (global::Card_Campaign.BaseCard)instance;
             that.ParallaxRef = (global::Windows.UI.Xaml.Controls.GridView)Value;
         }
-        private object get_6_NewCampaignCard_PlayerName(object instance)
+        private object get_6_NewCampaignCardBlank_PlayerName(object instance)
         {
-            var that = (global::Card_Campaign.NewCampaignCard)instance;
+            var that = (global::Card_Campaign.NewCampaignCardBlank)instance;
             return that.PlayerName;
         }
-        private void set_6_NewCampaignCard_PlayerName(object instance, object Value)
+        private void set_6_NewCampaignCardBlank_PlayerName(object instance, object Value)
         {
-            var that = (global::Card_Campaign.NewCampaignCard)instance;
+            var that = (global::Card_Campaign.NewCampaignCardBlank)instance;
             that.PlayerName = (global::System.String)Value;
         }
         private object get_7_MainPage_FrameRef(object instance)
@@ -564,12 +574,12 @@ namespace Card_Campaign.Card_Campaign_XamlTypeInfo
                 xamlMember = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlMember(this, "ParallaxRef", "Windows.UI.Xaml.Controls.GridView");
                 xamlMember.Setter = set_5_BaseCard_ParallaxRef;
                 break;
-            case "Card_Campaign.NewCampaignCard.PlayerName":
-                userType = (global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Card_Campaign.NewCampaignCard");
+            case "Card_Campaign.NewCampaignCardBlank.PlayerName":
+                userType = (global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Card_Campaign.NewCampaignCardBlank");
                 xamlMember = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlMember(this, "PlayerName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_6_NewCampaignCard_PlayerName;
-                xamlMember.Setter = set_6_NewCampaignCard_PlayerName;
+                xamlMember.Getter = get_6_NewCampaignCardBlank_PlayerName;
+                xamlMember.Setter = set_6_NewCampaignCardBlank_PlayerName;
                 break;
             case "Card_Campaign.MainPage.FrameRef":
                 userType = (global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Card_Campaign.MainPage");
