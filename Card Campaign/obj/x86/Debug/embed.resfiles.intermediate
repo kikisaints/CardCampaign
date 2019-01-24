@@ -2,11 +2,14 @@ App.xbf
 CampaignCard.xbf
 Controls\BaseCard.xbf
 Controls\BlankCampaignCard.xbf
+Controls\MonsterCard.xbf
+Controls\MonsterDetails.xbf
 Controls\MonsterTag.xbf
 Controls\NewCampaignCard.xbf
 Controls\PlayerTag.xbf
 DropShadowEffect.xbf
 HomePage.xbf
+LoadingPage.xbf
 MainPage.xbf
 MonsterLogPage.xbf
 SettingsPage.xbf

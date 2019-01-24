@@ -17,20 +17,30 @@
                          Color="{ThemeResource SystemAccentColor}"/>
     </Page.Resources>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="#ffececec">
+        <!-- Bottom Image Pattern -->
+        <StackPanel  HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Orientation="Horizontal">
+            <Image Width="200" Height="200" Source="Assets/BottomPattern.png" />
+            <Image Width="200" Height="200" Source="Assets/BottomPattern.png" />
+            <Image Width="200" Height="200" Source="Assets/BottomPattern.png" />
+            <Image Width="200" Height="200" Source="Assets/BottomPattern.png" />
+            <Image Width="200" Height="200" Source="Assets/BottomPattern.png" />
+            <Image Width="200" Height="200" Source="Assets/BottomPattern.png" />
+            <Image Width="200" Height="200" Source="Assets/BottomPattern.png" />
+            <Image Width="200" Height="200" Source="Assets/BottomPattern.png" />
+            <Image Width="200" Height="200" Source="Assets/BottomPattern.png" />
+            <Image Width="200" Height="200" Source="Assets/BottomPattern.png" />
+        </StackPanel>
         <Frame x:Name="mainRefreshFrame">
             <NavigationView x:Name="NavView" RequestedTheme="Dark" 
                         OpenPaneLength="280" 
                         CompactModeThresholdWidth="160" 
-                        ExpandedModeThresholdWidth="1920"
-                        Background="#ffececec" Margin="0,-1,0,0"
+                        ExpandedModeThresholdWidth="5920"
+                        Background="Transparent" Margin="0,-1,0,0"
                         ItemInvoked="NavView_ItemInvoked"
                         Loaded="NavView_Loaded"
                         IsSettingsVisible="True"
                         SelectionChanged="NavView_SelectionChanged">
-                <!--ItemInvoked="NavView_ItemInvoked"
-                    SelectionChanged="NavView_SelectionChanged"
-                    Loaded="NavView_Loaded">-->
 
                 <NavigationView.MenuItems>
                     <NavigationViewItem Content="Home" Tag="home" Style="{StaticResource NavViewItemMainStyle}">
@@ -39,7 +49,7 @@
                         </NavigationViewItem.Icon>
                     </NavigationViewItem>
                     <NavigationViewItemSeparator/>
-                    <NavigationViewItem Style="{StaticResource NavViewItemMainStyle}" Content="Enemy Log" Tag="enemylog">
+                    <NavigationViewItem Style="{StaticResource NavViewItemMainStyle}" Content="Monster Log" Tag="enemylog">
                         <NavigationViewItem.Icon>
                             <FontIcon Glyph="&#x1f47f;" FontFamily="Segoe UI Symbol" FontSize="18" Height="40" Width="40"/>
                         </NavigationViewItem.Icon>
@@ -53,21 +63,10 @@
 
                 <NavigationView.HeaderTemplate>
                     <DataTemplate>
-                        <Grid x:Name="GridSearchBox" Background="{ThemeResource SystemControlBackgroundAltHighBrush}" Height="48" Visibility="Visible">
-                            <AutoSuggestBox VerticalAlignment="Center" HorizontalAlignment="Left" PlaceholderText="Search this Page" x:Name="ASB" QueryIcon="Find" MaxWidth="330" MinWidth="230" Margin="20,5,0,0"/>
-                        </Grid>
                     </DataTemplate>
                 </NavigationView.HeaderTemplate>
 
-                <NavigationView.PaneFooter>
-                    <!--<NavigationViewItem Content="Settings" Tag="settings">
-                    <NavigationViewItem.Icon>
-                        <FontIcon Glyph="&#xE713;" FontSize="18" Height="40" Width="40"/>
-                    </NavigationViewItem.Icon>
-                </NavigationViewItem>-->
-                </NavigationView.PaneFooter>
-
-                <Frame x:Name="ContentFrame" Margin="24">
+                <Frame x:Name="ContentFrame" Margin="24, -25, 0, 24">
                     <Frame.ContentTransitions>
                         <TransitionCollection>
                             <NavigationThemeTransition/>
@@ -77,13 +76,9 @@
 
             </NavigationView>
         </Frame>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="300"/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Grid Grid.Column="1" x:Name="OverrideTitleBar" HorizontalAlignment="Stretch" Height="47" Width="Auto" 
-                  VerticalAlignment="Top" Background="{ThemeResource SystemControlBackgroundAltHighBrush}"/>
-        </Grid>
+        <Grid Grid.Column="0" x:Name="OverrideTitleBar" HorizontalAlignment="Stretch" Height="47" Width="Auto" 
+            VerticalAlignment="Top" Background="{ThemeResource SystemControlTransparentBrush}" Margin="280,0,0,0">
+            
+        </Grid>        
     </Grid>
 </Page>

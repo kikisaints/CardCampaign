@@ -14,6 +14,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Card_Campaign.Logs;
+using System.Collections.ObjectModel;
 
 namespace Card_Campaign
 {
@@ -22,7 +24,6 @@ namespace Card_Campaign
     /// </summary>
     sealed partial class App : Application
     {
-        Logs.MonsterLog bestiary;
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -31,9 +32,65 @@ namespace Card_Campaign
         {
             RequestedTheme = ApplicationTheme.Light;
             this.InitializeComponent();
-            this.Suspending += OnSuspending;
+            this.Suspending += OnSuspending;            
+        }
+        
+        MonsterLog Bestiary { get; set; }
 
-            bestiary = new Logs.MonsterLog();
+        public void CreateBestiary(Card_Campaign.LoadingPage loadpage)
+        {
+            Bestiary = new MonsterLog(loadpage);
+        }
+
+        public void FillLog(ref ObservableCollection<MonsterTag> monsterLogList)
+        {
+            foreach(Logs.MonsterInfo mInfo in Bestiary.monsterDictionary)
+            {
+                //Need to parse that challenge rating so it sorts correctly
+                MonsterTag mTag = new MonsterTag() { CreatureName = mInfo.name, Alignment = mInfo.alignment, ChallengeRating = mInfo.tagList[2] };
+                monsterLogList.Add(mTag);
+            }
+        }
+
+        public string CheckBeastAC(int index)
+        {
+            return Bestiary.UpdateBeastiary(index).AC;
+        }
+        public string CheckBeastHP(int index)
+        {
+            return Bestiary.UpdateBeastiary(index).HP;
+        }
+        public string CheckBeastSpeed(int index)
+        {
+            return Bestiary.UpdateBeastiary(index).speed;
+        }
+        public int CheckBeastSTR(int index)
+        {
+            return Bestiary.UpdateBeastiary(index).STR;
+        }        
+        public int CheckBeastDEX(int index)
+        {
+            return Bestiary.UpdateBeastiary(index).DEX;
+        }
+        public int CheckBeastCON(int index)
+        {
+            return Bestiary.UpdateBeastiary(index).CON;
+        }
+        public int CheckBeastINT(int index)
+        {
+            return Bestiary.UpdateBeastiary(index).INT;
+        }
+        public int CheckBeastWIS(int index)
+        {
+            return Bestiary.UpdateBeastiary(index).WIS;
+        }
+        public int CheckBeastCHA(int index)
+        {
+            return Bestiary.UpdateBeastiary(index).CHA;
+        }
+        public string CheckBeastSizeType(int index)
+        {
+            return Bestiary.UpdateBeastiary(index).sizeAndtype;
         }
 
         /// <summary>
@@ -70,7 +127,7 @@ namespace Card_Campaign
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-                    rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                    rootFrame.Navigate(typeof(LoadingPage), e.Arguments);
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();

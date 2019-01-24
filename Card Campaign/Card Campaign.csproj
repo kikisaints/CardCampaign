@@ -104,11 +104,20 @@
     <Compile Include="Controls\BlankCampaignCard.xaml.cs">
       <DependentUpon>BlankCampaignCard.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\MonsterCard.xaml.cs">
+      <DependentUpon>MonsterCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MonsterDetails.xaml.cs">
+      <DependentUpon>MonsterDetails.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DropShadowEffect.xaml.cs">
       <DependentUpon>DropShadowEffect.xaml</DependentUpon>
     </Compile>
     <Compile Include="HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingPage.xaml.cs">
+      <DependentUpon>LoadingPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Logs\LogHelpers.cs" />
     <Compile Include="Logs\MonserLog.cs" />
@@ -144,6 +153,7 @@
     <None Include="Properties\app.manifest" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\BottomPattern.png" />
     <Content Include="Monsters.xml" />
     <Content Include="Assets\RedDragon_Larger.png" />
     <Content Include="Assets\RedDragon_Wider.png" />
@@ -173,11 +183,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Controls\MonsterCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\MonsterDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DropShadowEffect.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="HomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoadingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

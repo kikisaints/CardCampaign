@@ -1,0 +1,24 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="Card_Campaign.LoadingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Card_Campaign"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+                        >
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid>
+            <Grid x:ConnectionId='5' Background="Transparent" Grid.Column="0" x:Name="OverrideTitleBar" HorizontalAlignment="Stretch" Height="47" Width="Auto" 
+                  VerticalAlignment="Top"/>
+        </Grid>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:ConnectionId='2' x:Name="loading" FontSize="35" Foreground="#ff5e5e5e" TextAlignment="Center" Text="Fetching Monsters" FontFamily="Segoe UI Light"/>
+            <TextBlock x:ConnectionId='3' x:Name="monsterName" FontSize="20" Margin="0,20,0,10" Foreground="#ff5e5e5e" Text="" TextAlignment="Center" FontFamily="Segoe UI Light"/>
+            <TextBlock x:ConnectionId='4' x:Name="loadinginfo" FontSize="20" Foreground="#ff5e5e5e" Text="0/761" TextAlignment="Center" FontFamily="Segoe UI Light"/>
+        </StackPanel>
+    </Grid>
+</Page>
+

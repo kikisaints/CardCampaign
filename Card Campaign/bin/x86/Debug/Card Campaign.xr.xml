@@ -80,6 +80,9 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Style" />
       <RootProperty Name="Icon" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Background" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="HorizontalAlignment" />
@@ -93,17 +96,6 @@
       <RootProperty Name="FocusVisualMargin" />
       <RootProperty Name="MaxHeight" />
       <RootProperty Name="MaxWidth" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.AppBarToggleButton">
-      <RootProperty Name="Style" />
-      <RootProperty Name="Icon" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Foreground" />
-      <RootEvent Name="Checked" />
-      <RootEvent Name="Unchecked" />
-      <RootEvent Name="PointerEntered" />
-      <RootEvent Name="PointerExited" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Background" />
@@ -176,6 +168,7 @@
       <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="Width" />
       <RootEvent Name="ItemClick" />
+      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListViewBase">
       <RootProperty Name="IsSwipeEnabled" />
@@ -363,24 +356,23 @@
     <RootType FullName="Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Visibility" />
       <RootProperty Name="Text" />
       <RootProperty Name="Foreground" />
-      <RootProperty Name="FontFamily" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Opacity" />
-      <RootProperty Name="Visibility" />
+      <RootProperty Name="FontFamily" />
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="TextTrimming" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Padding" />
       <RootProperty Name="FontStyle" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Style" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="RequestedTheme" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualTransition">
       <RootProperty Name="From" />
@@ -417,6 +409,7 @@
       <RootProperty Name="Content" />
       <RootProperty Name="Height" />
       <RootProperty Name="Resources" />
+      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Card_Campaign.DropShadowEffect" />
     <RootType FullName="Card_Campaign.CampaignCard" />
@@ -434,6 +427,17 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.SymbolIconSource">
       <RootProperty Name="Symbol" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBarToggleButton">
+      <RootProperty Name="Style" />
+      <RootProperty Name="Icon" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Foreground" />
+      <RootEvent Name="Checked" />
+      <RootEvent Name="Unchecked" />
+      <RootEvent Name="PointerEntered" />
+      <RootEvent Name="PointerExited" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.GradientStop">
       <RootProperty Name="Color" />
@@ -484,9 +488,23 @@
       <RootProperty Name="ImageSource" />
     </RootType>
     <RootType FullName="Card_Campaign.Controls.BlankCampaignCard" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="Card_Campaign.Controls.MonsterDetails">
+      <RootProperty Name="HeaderText" />
+      <RootProperty Name="ContentText" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Card_Campaign.Controls.MonsterCard">
+      <RootProperty Name="Margin" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
-      <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
+      <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
       <RootProperty Name="Header" />
@@ -497,6 +515,7 @@
       <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Card_Campaign.HomePage" />
+    <RootType FullName="Card_Campaign.LoadingPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
@@ -512,7 +531,6 @@
       <RootProperty Name="IsSettingsVisible" />
       <RootProperty Name="MenuItems" />
       <RootProperty Name="HeaderTemplate" />
-      <RootProperty Name="PaneFooter" />
       <RootProperty Name="Content" />
       <RootEvent Name="ItemInvoked" />
       <RootEvent Name="Loaded" />
@@ -522,40 +540,48 @@
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="PlaceholderText" />
-      <RootProperty Name="QueryIcon" />
-      <RootProperty Name="MaxWidth" />
-      <RootProperty Name="MinWidth" />
-      <RootProperty Name="Margin" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.NavigationThemeTransition" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Source" />
+    </RootType>
     <RootType FullName="Card_Campaign.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Flyout">
+      <RootProperty Name="LightDismissOverlayMode" />
+      <RootProperty Name="FlyoutPresenterStyle" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Placement" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.FlyoutPresenter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="QueryIcon" />
+      <RootEvent Name="TextChanged" />
+      <RootEvent Name="SuggestionChosen" />
+      <RootEvent Name="QuerySubmitted" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="Width" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Background" />
       <RootProperty Name="Items" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="SelectedIndex" />
+      <RootEvent Name="SelectionChanged" />
     </RootType>
-    <RootType FullName="Card_Campaign.MonsterTag" />
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Card_Campaign.MonsterLogPage" />
+    <RootType FullName="Card_Campaign.MonsterTag" />
     <RootType FullName="System.Double" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Flyout">
-      <RootProperty Name="Placement" />
-      <RootProperty Name="LightDismissOverlayMode" />
-      <RootProperty Name="FlyoutPresenterStyle" />
-      <RootProperty Name="Content" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.FlyoutPresenter" />
     <RootType FullName="Card_Campaign.WrapPanel" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="VerticalAlignment" />
@@ -565,6 +591,10 @@
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Card_Campaign.PlayerTag" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
+      <RootProperty Name="Content" />
+      <RootProperty Name="IsChecked" />
+    </RootType>
     <RootType FullName="Card_Campaign.SettingsPage" />
     <RootType FullName="Card_Campaign.SpellLogPage" />
   </Roots.RootTypes>

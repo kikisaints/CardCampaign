@@ -1,1 +1,1 @@
-D:\DnDCardCampaign\Project\CardCampaignRepo\Card Campaign\Card Campaign.csproj;x86
+D:\DnDCardCampaign\Project\CC\Card Campaign\Card Campaign.csproj;x86

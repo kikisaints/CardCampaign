@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource SystemControlTransparentBrush}">
+    <Grid Background="{ThemeResource SystemControlTransparentBrush}" Margin="0,25,0,0">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -96,6 +96,13 @@
                                 </Grid>
                             </GridViewItem>
                         </GridView>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Background Image"/>
+                        <RadioButton Content="Dice" IsChecked="True"/>
+                        <RadioButton Content="Dragons"/>
+                        <RadioButton Content="Weapons"/>
+                        <RadioButton Content="Dungeons and Dragons Logo"/>
                     </StackPanel>
                 </StackPanel>
             </Grid>

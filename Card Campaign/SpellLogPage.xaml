@@ -19,7 +19,7 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <TextBlock Grid.Column="0" Style="{ThemeResource HeaderTextBlockStyle}" Foreground="#ff363636" Text="Spell Catalog" Margin="5" FontSize="40"/>
+            <TextBlock Grid.Column="0" Style="{ThemeResource HeaderTextBlockStyle}" Foreground="#ff363636" Text="Spell Log" Margin="5" FontSize="40"/>
             <ComboBox Grid.Column="1" VerticalAlignment="Top" Margin="10,15,20,20" HorizontalAlignment="Right" PlaceholderText="Sort By" Width="250" BorderThickness="0,0,0,1" Background="Transparent">
                 <ComboBoxItem>Pinned</ComboBoxItem>
                 <ComboBoxItem>A - Z</ComboBoxItem>

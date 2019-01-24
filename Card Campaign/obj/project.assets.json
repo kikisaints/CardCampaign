@@ -6343,11 +6343,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DnDCardCampaign\\Project\\CardCampaignRepo\\Card Campaign\\Card Campaign.csproj",
+      "projectUniqueName": "D:\\DnDCardCampaign\\Project\\CC\\Card Campaign\\Card Campaign.csproj",
       "projectName": "Card Campaign",
-      "projectPath": "D:\\DnDCardCampaign\\Project\\CardCampaignRepo\\Card Campaign\\Card Campaign.csproj",
+      "projectPath": "D:\\DnDCardCampaign\\Project\\CC\\Card Campaign\\Card Campaign.csproj",
       "packagesPath": "C:\\Users\\Kiki\\.nuget\\packages\\",
-      "outputPath": "D:\\DnDCardCampaign\\Project\\CardCampaignRepo\\Card Campaign\\obj\\",
+      "outputPath": "D:\\DnDCardCampaign\\Project\\CC\\Card Campaign\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

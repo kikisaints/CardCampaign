@@ -32,7 +32,7 @@ namespace Card_Campaign
         {
             this.InitializeComponent();
 
-            for (int i = 0; i < 25; i++)
+            for (int i = 0; i < 1; i++)
             {
                 GridViewRoot.Items.Add(new CampaignCard() { ParallaxGridViewRef = GridViewRoot });
             }

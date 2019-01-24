@@ -5,35 +5,46 @@
     xmlns:local="using:Card_Campaign"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local1="using:Card_Campaign.Controls"
     mc:Ignorable="d"
-    d:DesignHeight="40"
-    d:DesignWidth="320">
+    Width="320">
 
-    <Grid Height="40" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" CornerRadius="5">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="40"/>
-            <ColumnDefinition Width="40"/>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <Grid Height="40" 
+              Grid.Row="0"
+              Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+              CornerRadius="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
 
-        <Grid x:ConnectionId='1' Grid.Column="0" x:Name="Alignment" BorderThickness="1,1,1,1" BorderBrush="#ffd2d1d1" CornerRadius="1,0,0,0">
-            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock Text="N" FontFamily="Segoe UI Symbol Regular" TextAlignment="Center" Foreground="#ffd2d1d1"/>
-            </StackPanel>
-        </Grid>
-        <Grid x:ConnectionId='2' Grid.Column="1" x:Name="ChallengeRating" BorderThickness="0,1,1,1" BorderBrush="#ffd2d1d1">
-            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock Text="CR" FontFamily="Segoe UI Symbol Regular" TextAlignment="Center" Foreground="#ffd2d1d1" FontSize="12"/>
-                <TextBlock Text="0" FontFamily="Segoe UI Symbol Regular" TextAlignment="Center" Foreground="#ffd2d1d1" FontSize="12"/>
-            </StackPanel>
-        </Grid>
-        <Grid x:ConnectionId='3' Grid.Column="2" x:Name="MonterName" BorderThickness="0,1,0,1" BorderBrush="#ffd2d1d1">
-            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5" Text="Monster Name" FontFamily="Segoe UI Symbol Regular"/>
-        </Grid>
-        <AppBarToggleButton Grid.Column="3" Style="{ThemeResource PinToggleButton}" 
+            <Grid Grid.Column="0" BorderThickness="1,1,1,1" BorderBrush="#ffd2d1d1" CornerRadius="1,0,0,0">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock x:ConnectionId='3' x:Name="AlignmentTextB" Text="N" FontFamily="Segoe UI Symbol Regular" TextAlignment="Center" Foreground="#ffd2d1d1"/>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Column="1" BorderThickness="0,1,1,1" BorderBrush="#ffd2d1d1">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="CR" FontFamily="Segoe UI Symbol Regular" TextAlignment="Center" Foreground="#ffd2d1d1" FontSize="12"/>
+                    <TextBlock x:ConnectionId='2' Text="0" x:Name="ChallengeRatingTextB" FontFamily="Segoe UI Symbol Regular" TextAlignment="Center" Foreground="#ffd2d1d1" FontSize="12"/>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Column="2" BorderThickness="0,1,0,1" BorderBrush="#ffd2d1d1">
+                <TextBlock x:ConnectionId='1' x:Name="MonterNameTextB" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5" Text="Monster Name" FontFamily="Segoe UI Symbol Regular"/>
+            </Grid>
+            <AppBarButton Width="45" Grid.Column="3" Style="{ThemeResource PinToggleButton}" 
                             Foreground="{ThemeResource ApplicationPageBackgroundThemeBrush}" 
                             Icon="Pin" Background="{ThemeResource UserSelectedCardBrush}"/>
+        </Grid>
     </Grid>
 </UserControl>
 

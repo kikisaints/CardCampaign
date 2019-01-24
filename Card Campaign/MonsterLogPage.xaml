@@ -5,35 +5,111 @@
     xmlns:local="using:Card_Campaign"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local1="using:Card_Campaign.Controls"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource SystemControlTransparentBrush}">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition Width="Auto"/>
-            </Grid.ColumnDefinitions>
+    <Page.Resources>
+        <SolidColorBrush x:Key="GridViewItemRevealBorderBrush" Color="Transparent"/>
+        <Thickness x:Key="GridViewItemRevealBorderThemeThickness">0</Thickness>
+        <SolidColorBrush x:Key="GridViewItemRevealBackground" Color="Transparent"/>
 
-            <TextBlock Grid.Column="0" Style="{ThemeResource HeaderTextBlockStyle}" Foreground="#ff363636" Text="Enemy Catalog" Margin="5" FontSize="40"/>
-            <ComboBox VerticalAlignment="Bottom" Grid.Column="1" Margin="10,15,20,20" HorizontalAlignment="Right" PlaceholderText="Sort By" Width="250" BorderThickness="0,0,0,1" Background="Transparent">
-                <ComboBoxItem>Pinned</ComboBoxItem>
-                <ComboBoxItem>A - Z</ComboBoxItem>                
-                <ComboBoxItem>Challenger Rating</ComboBoxItem>
-                <ComboBoxItem>Type</ComboBoxItem>
-            </ComboBox>
-            <StackPanel Orientation="Horizontal" Grid.Column="2">
-                <AppBarButton Margin="0,15,2,15"  Style="{ThemeResource RefreshButton}" Icon="Refresh" ToolTipService.ToolTip="Check for Updates"/>
-                <AppBarButton Margin="20,15,15,15" Style="{ThemeResource RefreshButton}" Icon="AddFriend" ToolTipService.ToolTip="Add Custom Enemy"/>
+        <Flyout x:Name="MonsterTagFlyout" LightDismissOverlayMode="On">
+            <Flyout.FlyoutPresenterStyle>
+                <Style TargetType="FlyoutPresenter">
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                    <Setter Property="Margin" Value="0,350,0,0"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="Background" Value="Transparent"/>
+                </Style>
+            </Flyout.FlyoutPresenterStyle>
+            <local1:MonsterCard x:Name="monsterCardFlyout" Margin="-12,-10"/>
+        </Flyout>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource SystemControlTransparentBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Column="0" Style="{ThemeResource HeaderTextBlockStyle}" Foreground="#ff363636" Text="Monster Log" Margin="5" FontSize="40"/>
+        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <AutoSuggestBox x:Name="searchLog" 
+                            TextChanged="searchLog_TextChanged"
+                            Margin="10,15,5,5" 
+                            PlaceholderText="Search Catalog" 
+                            Width="250" 
+                            QueryIcon="Zoom"
+                            SuggestionChosen="searchLog_SuggestionChosen"
+                            QuerySubmitted="searchLog_QuerySubmitted"/>
+            <StackPanel Orientation="Vertical" >
+                <ComboBox x:Name="SortBox" VerticalAlignment="Bottom" SelectionChanged="ComboBox_SelectionChanged" 
+                  Margin="10,15,5,5" PlaceholderText="Sort By" Width="250" BorderThickness="0,0,0,1" Background="Transparent">
+                    <ComboBoxItem>Pinned</ComboBoxItem>
+                    <ComboBoxItem>A - Z</ComboBoxItem>
+                    <ComboBoxItem>Challenge Rating</ComboBoxItem>
+                    <ComboBoxItem>Type</ComboBoxItem>
+                    <ComboBoxItem>Size</ComboBoxItem>
+                    <ComboBoxItem>Alignments</ComboBoxItem>
+                    <ComboBoxItem>Monster Manual</ComboBoxItem>
+                    <ComboBoxItem>Volo's Guide</ComboBoxItem>
+                </ComboBox>
+                <ComboBox x:Name="alignmentBox" VerticalAlignment="Bottom" Margin="10,0,20,20" HorizontalAlignment="Right" Visibility="Collapsed"
+                      SelectedIndex="0" Width="250" BorderThickness="0,0,0,1" Background="Transparent" SelectionChanged="ComboBox_SelectionChanged_1">
+                    <ComboBoxItem>Lawful Good</ComboBoxItem>
+                    <ComboBoxItem>Neutral Good</ComboBoxItem>
+                    <ComboBoxItem>Chaotic Good</ComboBoxItem>
+                    <ComboBoxItem>Lawful Neutral</ComboBoxItem>
+                    <ComboBoxItem>Neutral</ComboBoxItem>
+                    <ComboBoxItem>Chaotic Neutral</ComboBoxItem>
+                    <ComboBoxItem>Lawful Evil</ComboBoxItem>
+                    <ComboBoxItem>Neutral Evil</ComboBoxItem>
+                    <ComboBoxItem>Chaotic Evil</ComboBoxItem>
+                </ComboBox>
+                <ComboBox x:Name="challengeRatingBox" VerticalAlignment="Bottom" Margin="10,0,20,20" HorizontalAlignment="Right" Visibility="Collapsed"
+                      SelectedIndex="0" Width="250" BorderThickness="0,0,0,1" Background="Transparent" SelectionChanged="challengeRatingBox_SelectionChanged">
+                    <ComboBoxItem>All</ComboBoxItem>
+                    <ComboBoxItem>0 - 5</ComboBoxItem>
+                    <ComboBoxItem>5 - 10</ComboBoxItem>
+                    <ComboBoxItem>10 - 20</ComboBoxItem>
+                    <ComboBoxItem>20 - 30</ComboBoxItem>
+                </ComboBox>
+                <ComboBox x:Name="typeBox" VerticalAlignment="Bottom" Margin="10,0,20,20" HorizontalAlignment="Right" Visibility="Collapsed"
+                      SelectedIndex="0" Width="250" BorderThickness="0,0,0,1" Background="Transparent" SelectionChanged="typeBox_SelectionChanged">
+                    <ComboBoxItem>All</ComboBoxItem>
+                    <ComboBoxItem>Aberration</ComboBoxItem>
+                    <ComboBoxItem>Beast</ComboBoxItem>
+                    <ComboBoxItem>Celestial</ComboBoxItem>
+                    <ComboBoxItem>Construct</ComboBoxItem>
+                    <ComboBoxItem>Dragon</ComboBoxItem>
+                    <ComboBoxItem>Elemental</ComboBoxItem>
+                    <ComboBoxItem>Fey</ComboBoxItem>
+                    <ComboBoxItem>Fiend</ComboBoxItem>
+                    <ComboBoxItem>Giant</ComboBoxItem>
+                    <ComboBoxItem>Humanoid</ComboBoxItem>
+                    <ComboBoxItem>Monstrosity</ComboBoxItem>
+                    <ComboBoxItem>Ooze</ComboBoxItem>
+                    <ComboBoxItem>Plant</ComboBoxItem>
+                    <ComboBoxItem>Swarm of Tiny Beasts</ComboBoxItem>
+                    <ComboBoxItem>Undead</ComboBoxItem>
+                </ComboBox>
             </StackPanel>
-            <Grid Grid.Row="1" Grid.ColumnSpan="2">
-                <GridView x:Name="MonsterLogList">
-                    <local:MonsterTag/>
-                </GridView>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Grid.Column="2">
+            <AppBarButton Margin="0,15,2,15"  Style="{ThemeResource RefreshButton}" Icon="Refresh" ToolTipService.ToolTip="Check for Updates"/>
+            <AppBarButton Margin="20,15,15,15" Style="{ThemeResource RefreshButton}" Icon="AddFriend" ToolTipService.ToolTip="Add Custom Enemy"/>
+        </StackPanel>
+        <Grid Grid.Row="1" Grid.ColumnSpan="3">
+            <Grid ScrollViewer.VerticalScrollBarVisibility="Visible">
+                <GridView Margin="-10,0,10,0" x:Name="MonsterLogList" ItemContainerStyle="{StaticResource noTiltListItemMonster}" 
+                          IsItemClickEnabled="True" SelectionChanged="MonsterLogList_SelectionChanged"/>
             </Grid>
         </Grid>
     </Grid>

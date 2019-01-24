@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="Card_Campaign.SpellLogPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Card_Campaign"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource SystemControlTransparentBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" Style="{ThemeResource HeaderTextBlockStyle}" Foreground="#ff363636" Text="Spell Catalog" Margin="5" FontSize="40"/>
+            <ComboBox Grid.Column="1" VerticalAlignment="Top" Margin="10,15,20,20" HorizontalAlignment="Right" PlaceholderText="Sort By" Width="250" BorderThickness="0,0,0,1" Background="Transparent">
+                <ComboBoxItem>Pinned</ComboBoxItem>
+                <ComboBoxItem>A - Z</ComboBoxItem>
+                <ComboBoxItem>Level</ComboBoxItem>
+                <ComboBoxItem>School</ComboBoxItem>
+                <ComboBoxItem>Casting Time</ComboBoxItem>
+                <ComboBoxItem>Range</ComboBoxItem>
+            </ComboBox>            
+            <StackPanel Orientation="Horizontal" Grid.Column="2">
+                <AppBarButton Margin="0,15,2,15" Style="{ThemeResource RefreshButton}" Icon="Refresh" ToolTipService.ToolTip="Check for Updates"/>
+                <AppBarButton Margin="20,15,15,15" Style="{ThemeResource RefreshButton}" ToolTipService.ToolTip="Add Custom Spell">
+                    <AppBarButton.Icon>
+                        <FontIcon Glyph="&#xE82E;"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+            </StackPanel>
+            <Grid Grid.Row="1" Grid.ColumnSpan="2">
+
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
+
