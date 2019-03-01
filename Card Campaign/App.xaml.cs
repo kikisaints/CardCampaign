@@ -52,45 +52,45 @@ namespace Card_Campaign
             }
         }
 
-        public string CheckBeastAC(int index)
+        public string CheckBeastAC(string name)
         {
-            return Bestiary.UpdateBeastiary(index).AC;
+            return Bestiary.UpdateBeastiary(name).AC;
         }
-        public string CheckBeastHP(int index)
+        public string CheckBeastHP(string name)
         {
-            return Bestiary.UpdateBeastiary(index).HP;
+            return Bestiary.UpdateBeastiary(name).HP;
         }
-        public string CheckBeastSpeed(int index)
+        public string CheckBeastSpeed(string name)
         {
-            return Bestiary.UpdateBeastiary(index).speed;
+            return Bestiary.UpdateBeastiary(name).speed;
         }
-        public int CheckBeastSTR(int index)
+        public int CheckBeastSTR(string name)
         {
-            return Bestiary.UpdateBeastiary(index).STR;
+            return Bestiary.UpdateBeastiary(name).STR;
         }        
-        public int CheckBeastDEX(int index)
+        public int CheckBeastDEX(string name)
         {
-            return Bestiary.UpdateBeastiary(index).DEX;
+            return Bestiary.UpdateBeastiary(name).DEX;
         }
-        public int CheckBeastCON(int index)
+        public int CheckBeastCON(string name)
         {
-            return Bestiary.UpdateBeastiary(index).CON;
+            return Bestiary.UpdateBeastiary(name).CON;
         }
-        public int CheckBeastINT(int index)
+        public int CheckBeastINT(string name)
         {
-            return Bestiary.UpdateBeastiary(index).INT;
+            return Bestiary.UpdateBeastiary(name).INT;
         }
-        public int CheckBeastWIS(int index)
+        public int CheckBeastWIS(string name)
         {
-            return Bestiary.UpdateBeastiary(index).WIS;
+            return Bestiary.UpdateBeastiary(name).WIS;
         }
-        public int CheckBeastCHA(int index)
+        public int CheckBeastCHA(string name)
         {
-            return Bestiary.UpdateBeastiary(index).CHA;
+            return Bestiary.UpdateBeastiary(name).CHA;
         }
-        public string CheckBeastSizeType(int index)
+        public string CheckBeastSizeType(string name)
         {
-            return Bestiary.UpdateBeastiary(index).sizeAndtype;
+            return Bestiary.UpdateBeastiary(name).sizeAndtype;
         }
 
         /// <summary>

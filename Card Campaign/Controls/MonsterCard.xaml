@@ -7,9 +7,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     d:DesignHeight="300"
-    d:DesignWidth="360">
+    d:DesignWidth="350">
 
-    <Grid CornerRadius="5" BorderThickness="1" BorderBrush="#30858585" Width="280">
+    <Grid CornerRadius="5" BorderThickness="1" BorderBrush="#ff858585" Width="280">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>

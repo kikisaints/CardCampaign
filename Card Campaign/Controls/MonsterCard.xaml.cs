@@ -39,6 +39,12 @@ namespace Card_Campaign.Controls
             set { detailInfoList.ItemsSource = (List<MonsterDetails>)value; }
         }
 
+        public string MonsterName
+        {
+            get { return MonterNameTextB.Text; }
+            set { MonterNameTextB.Text = (string)value; }
+        }
+
         public string StrengthStat
         {
             get { return strStat.Text; }

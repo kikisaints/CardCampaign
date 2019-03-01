@@ -17,6 +17,11 @@
     <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
       <RootProperty Name="Color" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.RevealBorderBrush">
+      <RootProperty Name="TargetTheme" />
+      <RootProperty Name="Color" />
+      <RootProperty Name="FallbackColor" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Thickness" />
     <RootType FullName="System.String" />
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
@@ -159,12 +164,12 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="Items" />
+      <RootProperty Name="SelectionMode" />
       <RootProperty Name="Style" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Padding" />
       <RootProperty Name="IsMultiSelectCheckBoxEnabled" />
-      <RootProperty Name="SelectionMode" />
       <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="Width" />
       <RootEvent Name="ItemClick" />
@@ -235,6 +240,7 @@
       <RootProperty Name="MaxWidth" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="MinHeight" />
+      <RootProperty Name="RequestedTheme" />
       <RootProperty Name="Visibility" />
       <RootEvent Name="PointerEntered" />
       <RootEvent Name="PointerExited" />
@@ -500,6 +506,8 @@
     </RootType>
     <RootType FullName="Card_Campaign.Controls.MonsterCard">
       <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Content" />
@@ -522,7 +530,6 @@
       <RootProperty Name="ContentTransitions" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationView">
-      <RootProperty Name="RequestedTheme" />
       <RootProperty Name="OpenPaneLength" />
       <RootProperty Name="CompactModeThresholdWidth" />
       <RootProperty Name="ExpandedModeThresholdWidth" />
@@ -549,9 +556,10 @@
     <RootType FullName="Card_Campaign.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Flyout">
       <RootProperty Name="LightDismissOverlayMode" />
+      <RootProperty Name="Placement" />
       <RootProperty Name="FlyoutPresenterStyle" />
       <RootProperty Name="Content" />
-      <RootProperty Name="Placement" />
+      <RootEvent Name="Closing" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.FlyoutPresenter" />
     <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">

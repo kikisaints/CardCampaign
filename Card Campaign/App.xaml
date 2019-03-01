@@ -16,6 +16,9 @@
                     <SolidColorBrush x:Key="UserSelectedCardColorLow" Color="#90ae3737"/>
                     <SolidColorBrush x:Key="UserSelectedCardColorPressed" Color="#ff4b1515"/>
 
+                    <RevealBorderBrush x:Key="SystemControlBackgroundTransparentRevealBorderBrush" TargetTheme="Dark" Color="Transparent" FallbackColor="Transparent" />
+                    <RevealBorderBrush x:Key="SystemControlHighlightAltTransparentRevealBorderBrush" TargetTheme="Dark" Color="Transparent" FallbackColor="Transparent" />
+
                     <SolidColorBrush x:Key="NavigationViewDefaultPaneBackground"
                          Color="{ThemeResource UserSelectedCardBrush}"/>
                     <SolidColorBrush x:Key="NavigationViewExpandedPaneBackground"

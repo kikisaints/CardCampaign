@@ -62,6 +62,7 @@ namespace Card_Campaign
 
                 var sortResult = monsterSortOC.OrderByDescending(a => a.FloatChallengeRating);
 
+                ResetCardFlyout();
                 MonsterLogList.ItemsSource = sortResult;
                 GrabSortedChallengeRationCollection();
             }
@@ -81,7 +82,8 @@ namespace Card_Campaign
                 alignmentBox.SelectedIndex = 0;
 
                 var sortResult = monsterSortOC.OrderByDescending(a => a.IsOfAlignmentType("LG"));
-    
+
+                ResetCardFlyout();
                 MonsterLogList.ItemsSource = sortResult;
                 GrabSortedAlignmentCollection("LG");
             }
@@ -99,6 +101,23 @@ namespace Card_Campaign
                     break;
             }
 
+            ResetCardFlyout();
+            MonsterLogList.ItemsSource = currectSortedCollection;
+        }
+
+        private void GrabSortedNameCollection(string partial)
+        {
+            currectSortedCollection.Clear();
+            foreach (MonsterTag obj in MonsterLogList.Items)
+            {
+                string name = obj.CreatureName;
+                if (name.Contains(partial))
+                    currectSortedCollection.Add(obj);
+                else
+                    break;
+            }
+
+            ResetCardFlyout();
             MonsterLogList.ItemsSource = currectSortedCollection;
         }
 
@@ -114,8 +133,10 @@ namespace Card_Campaign
                     currectSortedCollection.Add(mCR);
             }
 
+            ResetCardFlyout();
             MonsterLogList.ItemsSource = currectSortedCollection;
         }
+
 
         private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
@@ -232,44 +253,47 @@ namespace Card_Campaign
         {
             if(args.CheckCurrent() && sender.Text != null)
             {
-                List<string> suggestion = new List<string>();
+                //List<string> suggestion = new List<string>();
 
-                foreach (string s in monsterNamesList)
-                {
-                    string checkList = "";
-                    string letterCase = sender.Text.ToUpper();
-                    string nameCheck = s.ToUpper();
+                var sortResult = monsterSortOC.OrderByDescending(a => a.CreatureName.Contains(sender.Text));
+                MonsterLogList.ItemsSource = sortResult;
+                GrabSortedNameCollection(sender.Text);
+                //foreach (string s in monsterNamesList)
+                //{
+                //    string checkList = "";
+                //    string letterCase = sender.Text.ToUpper();
+                //    string nameCheck = s.ToUpper();
 
-                    int i = 0;
-                    foreach(char c in letterCase)
-                    {
-                        if (i + 1 >= s.Length)
-                            break;
+                //    int i = 0;
+                //    foreach(char c in letterCase)
+                //    {
+                //        if (i + 1 >= s.Length)
+                //            break;
 
-                        if(c == nameCheck[i + 1])
-                            checkList += nameCheck[i + 1];
-                        i++;
-                    }
+                //        if(c == nameCheck[i + 1])
+                //            checkList += nameCheck[i + 1];
+                //        i++;
+                //    }
 
-                    if (letterCase == checkList)
-                        suggestion.Add(s);
-                }
+                //    if (letterCase == checkList)
+                //        suggestion.Add(s);
+                //}
 
-                searchLog.ItemsSource = suggestion;
+                //searchLog.ItemsSource = suggestion;
             }
         }
 
         private void searchLog_SuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
         {
-            var selectedItem = args.SelectedItem.ToString();
-            sender.Text = selectedItem;
+            //var selectedItem = args.SelectedItem.ToString();
+            //sender.Text = selectedItem;
         }
 
         private void searchLog_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
         {
             if (args.ChosenSuggestion != null)
             {
-                searchLog.Text = args.ChosenSuggestion.ToString();
+                //searchLog.Text = args.ChosenSuggestion.ToString();
             }
         }
 
@@ -311,28 +335,42 @@ namespace Card_Campaign
             return baseStat.ToString();
         }
 
+        private void ResetCardFlyout()
+        {
+            MonsterTagFlyout.Hide();
+        }
+
         private void MonsterLogList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             MonsterTagFlyout.ShowAt(this);
             MonsterTag mTag = (MonsterTag)(sender as GridView).SelectedItem;
-            int mIndex = MonsterLogList.Items.IndexOf(mTag);
+            if (mTag != null)
+            {
+                string mName = mTag.CreatureName;
 
-            monsterCardFlyout.SizeTypeStat = ((App)Application.Current).CheckBeastSizeType(mIndex);
-            monsterCardFlyout.ACStat = ((App)Application.Current).CheckBeastAC(mIndex);
-            monsterCardFlyout.HPStat = ((App)Application.Current).CheckBeastHP(mIndex);
-            monsterCardFlyout.SPStat = ((App)Application.Current).CheckBeastSpeed(mIndex);
+                monsterCardFlyout.MonsterName = mName;
+                monsterCardFlyout.SizeTypeStat = ((App)Application.Current).CheckBeastSizeType(mName);
+                monsterCardFlyout.ACStat = ((App)Application.Current).CheckBeastAC(mName);
+                monsterCardFlyout.HPStat = ((App)Application.Current).CheckBeastHP(mName);
+                monsterCardFlyout.SPStat = ((App)Application.Current).CheckBeastSpeed(mName);
 
-            monsterCardFlyout.ACStat = monsterCardFlyout.ACStat.Replace(" (", "\r(");
-            monsterCardFlyout.SPStat = monsterCardFlyout.SPStat.Replace(',', '\r');
-            monsterCardFlyout.SPStat = monsterCardFlyout.SPStat.Replace(" (", "\r(");
-            monsterCardFlyout.HPStat = monsterCardFlyout.HPStat.Replace(' ', '\r');
+                monsterCardFlyout.ACStat = monsterCardFlyout.ACStat.Replace(" (", "\r(");
+                monsterCardFlyout.SPStat = monsterCardFlyout.SPStat.Replace(',', '\r');
+                monsterCardFlyout.SPStat = monsterCardFlyout.SPStat.Replace(" (", "\r(");
+                monsterCardFlyout.HPStat = monsterCardFlyout.HPStat.Replace(' ', '\r');
+                
+                monsterCardFlyout.StrengthStat = GetAbilityScore(((App)Application.Current).CheckBeastSTR(mName));
+                monsterCardFlyout.ConstitutionStat = GetAbilityScore(((App)Application.Current).CheckBeastCON(mName));
+                monsterCardFlyout.DextarityStat = GetAbilityScore(((App)Application.Current).CheckBeastDEX(mName));
+                monsterCardFlyout.IntelligenceStat = GetAbilityScore(((App)Application.Current).CheckBeastINT(mName));
+                monsterCardFlyout.WisdomStat = GetAbilityScore(((App)Application.Current).CheckBeastWIS(mName));
+                monsterCardFlyout.CharismaStat = GetAbilityScore(((App)Application.Current).CheckBeastCHA(mName));
+            }
+        }
 
-            monsterCardFlyout.StrengthStat = GetAbilityScore(((App)Application.Current).CheckBeastSTR(mIndex));
-            monsterCardFlyout.ConstitutionStat = GetAbilityScore(((App)Application.Current).CheckBeastCON(mIndex));
-            monsterCardFlyout.DextarityStat = GetAbilityScore(((App)Application.Current).CheckBeastDEX(mIndex));
-            monsterCardFlyout.IntelligenceStat = GetAbilityScore(((App)Application.Current).CheckBeastINT(mIndex));
-            monsterCardFlyout.WisdomStat = GetAbilityScore(((App)Application.Current).CheckBeastWIS(mIndex));
-            monsterCardFlyout.CharismaStat = GetAbilityScore(((App)Application.Current).CheckBeastCHA(mIndex));
+        private void MonsterTagFlyout_Closing(FlyoutBase sender, FlyoutBaseClosingEventArgs args)
+        {
+            MonsterLogList.SelectedItem = null;
         }
     }
 }

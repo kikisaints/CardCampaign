@@ -97,6 +97,10 @@ namespace Card_Campaign.Logs
                         if (pieces[0] == "title")
                         {
                             tempMonsterInfo.name = pieces[1];
+                            if (tempMonsterInfo.name == " Owl")
+                            {
+                                int i = 0;
+                            }
                         }
                         if (pieces[0] == "tags")
                         {
@@ -238,11 +242,10 @@ namespace Card_Campaign.Logs
             }//);   
         }
 
-        public MonsterInfo UpdateBeastiary(int beastIndex)
+        public MonsterInfo UpdateBeastiary(string beastName)
         {
-            if(beastIndex >= 0)
-                return monsterDictionary[beastIndex];
-
+            if(beastName != null)
+                return monsterDictionary.Find(x => x.name == beastName);
             return null;
         }
 

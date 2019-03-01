@@ -17,7 +17,7 @@
                          Color="{ThemeResource SystemAccentColor}"/>
     </Page.Resources>
 
-    <Grid Background="#ffececec">
+    <Grid Background="#ffececec" RequestedTheme="Dark">
         <!-- Bottom Image Pattern -->
         <StackPanel  HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Orientation="Horizontal">
             <Image Width="200" Height="200" Source="Assets/BottomPattern.png" />
@@ -32,7 +32,7 @@
             <Image Width="200" Height="200" Source="Assets/BottomPattern.png" />
         </StackPanel>
         <Frame x:ConnectionId='1' x:Name="mainRefreshFrame">
-            <NavigationView x:ConnectionId='3' x:Name="NavView" RequestedTheme="Dark" 
+            <NavigationView x:ConnectionId='3' x:Name="NavView"  
                         OpenPaneLength="280" 
                         CompactModeThresholdWidth="160" 
                         ExpandedModeThresholdWidth="5920"

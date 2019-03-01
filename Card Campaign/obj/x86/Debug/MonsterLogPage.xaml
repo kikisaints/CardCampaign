@@ -13,17 +13,17 @@
         <Thickness x:Key="GridViewItemRevealBorderThemeThickness">0</Thickness>
         <SolidColorBrush x:Key="GridViewItemRevealBackground" Color="Transparent"/>
 
-        <Flyout x:ConnectionId='1' x:Name="MonsterTagFlyout" LightDismissOverlayMode="On">
+        <Flyout x:ConnectionId='1' x:Name="MonsterTagFlyout" LightDismissOverlayMode="On" Placement="Full"                                   >
             <Flyout.FlyoutPresenterStyle>
                 <Style TargetType="FlyoutPresenter">
                     <Setter Property="HorizontalAlignment" Value="Center"/>
                     <Setter Property="VerticalAlignment" Value="Center"/>
-                    <Setter Property="Margin" Value="0,350,0,0"/>
+                    <Setter Property="Margin" Value="0,0,0,0"/>
                     <Setter Property="BorderThickness" Value="0"/>
                     <Setter Property="Background" Value="Transparent"/>
                 </Style>
             </Flyout.FlyoutPresenterStyle>
-            <local1:MonsterCard x:ConnectionId='2' x:Name="monsterCardFlyout" Margin="-12,-10"/>
+            <local1:MonsterCard x:ConnectionId='2' x:Name="monsterCardFlyout" Margin="-12,-10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Flyout>
     </Page.Resources>
 
@@ -109,7 +109,7 @@
         <Grid Grid.Row="1" Grid.ColumnSpan="3">
             <Grid ScrollViewer.VerticalScrollBarVisibility="Visible">
                 <GridView x:ConnectionId='3' Margin="-10,0,10,0" x:Name="MonsterLogList" ItemContainerStyle="{StaticResource noTiltListItemMonster}" 
-                          IsItemClickEnabled="True"                                                   />
+                                                                              SelectionMode="Single"/>
             </Grid>
         </Grid>
     </Grid>
