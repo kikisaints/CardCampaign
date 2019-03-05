@@ -326,8 +326,11 @@
       <RootProperty Name="MirroredWhenRightToLeft" />
       <RootProperty Name="UseLayoutRounding" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Visibility" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.PivotPanel">
       <RootProperty Name="VerticalAlignment" />

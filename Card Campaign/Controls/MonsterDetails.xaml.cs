@@ -27,6 +27,8 @@ namespace Card_Campaign.Controls
             this.InitializeComponent();
         }
 
+        FontIcon displayChevron = null;
+
         public void LeftAlignDetailContent()
         {
             infoHeader.HorizontalAlignment = HorizontalAlignment.Left;
@@ -34,6 +36,48 @@ namespace Card_Campaign.Controls
             infoDetail.Margin = new Thickness(8, 0, 0, 0);
             content.TextAlignment = TextAlignment.Left;
             content.Margin = new Thickness(8, 0, 0, 0);
+        }
+
+        public void SetHeaderAsLabel()
+        {
+            header.FontWeight = Windows.UI.Text.FontWeights.Bold;
+            header.FontSize = 14;
+            header.Margin = new Thickness(0, 0, 0, -100);
+        }
+
+        public void HasHiddenContent()
+        {
+            if (header.Visibility == Visibility.Visible)
+                displayChevron = contentChevron;
+            else if (subheader.Visibility == Visibility.Visible)
+                displayChevron = subContentChevron;
+
+            if (displayChevron != null)
+            {
+                displayChevron.Visibility = Visibility.Visible;
+                HideContent();
+            }
+            else
+            {
+                content.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        public void HideContent()
+        {
+            content.Visibility = Visibility.Collapsed;
+            displayChevron.Glyph = "\uE70D";
+        }
+
+        public void ShowContent()
+        {
+            content.Visibility = Visibility.Visible;
+            displayChevron.Glyph = "\uE70E";
+        }
+
+        public void SetHeaderMargin(Thickness value)
+        {
+            header.Margin = value;
         }
 
         public DependencyProperty SubHeaderVisibilityProperty =
@@ -118,6 +162,14 @@ namespace Card_Campaign.Controls
         {
             get { return content.Text; }
             set { content.Text = (string)value; }
+        }
+
+        private void SubContentChevron_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (content.Visibility == Visibility.Collapsed)
+                ShowContent();
+            else
+                HideContent();
         }
     }
 }

@@ -385,10 +385,15 @@ namespace Card_Campaign
                 if (monsterIndex == -1)
                     break;
 
+                if (content != "" && header == "" && subheader == "")
+                {
+                    subheader = "INFO:";
+                }
+
                 MonsterDetails monsterDetails = new MonsterDetails();
                 monsterDetails.HeaderText = header;
                 monsterDetails.SubHeaderText = subheader;
-                monsterDetails.ContentText = content;
+                monsterDetails.ContentText = content;                
 
                 if (header == "")
                     monsterDetails.HeaderVisibility = Visibility.Collapsed;
@@ -396,6 +401,14 @@ namespace Card_Campaign
                     monsterDetails.SubHeaderVisibility = Visibility.Collapsed;
                 if (content == "")
                     monsterDetails.ContentVisibility = Visibility.Collapsed;
+                
+                if(content.Length > 80)
+                {
+                    monsterDetails.HasHiddenContent();
+                }
+
+                if (subheader == "" && content == "" && header != "")
+                    monsterDetails.SetHeaderAsLabel();
 
                 monsterDetails.LeftAlignDetailContent();
                 fullList.Add(monsterDetails);
