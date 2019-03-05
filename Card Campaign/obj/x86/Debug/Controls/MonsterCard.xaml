@@ -9,6 +9,9 @@
     d:DesignHeight="300"
     d:DesignWidth="350">
 
+    <UserControl.Resources>
+    </UserControl.Resources>
+
     <Grid CornerRadius="5" BorderThickness="1" BorderBrush="#ff858585" Width="280">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -194,6 +197,16 @@
               CornerRadius="1,0,0,0"
               Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
             <ListView x:ConnectionId='3' x:Name="detailInfoList" SelectionMode="None" Height="220">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="BorderThickness" Value="0"/>
+                        <Setter Property="MinHeight" Value="1"/>
+                        <Setter Property="Margin" Value="4"/>
+                        <!--<Setter Property="Height" Value="15"/>-->
+                        <Setter Property="HorizontalContentAlignment" Value="Left" />
+                        <Setter Property="VerticalContentAlignment" Value="Top" />
+                    </Style>
+                </ListView.ItemContainerStyle>
             </ListView>
         </Grid>
 

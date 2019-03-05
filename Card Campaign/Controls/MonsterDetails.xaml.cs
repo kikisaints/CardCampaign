@@ -42,7 +42,6 @@ namespace Card_Campaign.Controls
         {
             header.FontWeight = Windows.UI.Text.FontWeights.Bold;
             header.FontSize = 14;
-            header.Margin = new Thickness(0, 0, 0, -100);
         }
 
         public void HasHiddenContent()
@@ -170,6 +169,20 @@ namespace Card_Campaign.Controls
                 ShowContent();
             else
                 HideContent();
+        }
+
+        private void Subheader_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            TextBlock senderObject = sender as TextBlock;
+            if(displayChevron != null)
+                senderObject.FontWeight = Windows.UI.Text.FontWeights.Bold;
+        }
+
+        private void Subheader_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            TextBlock senderObject = sender as TextBlock;
+            if (displayChevron != null)
+                senderObject.FontWeight = Windows.UI.Text.FontWeights.Normal;
         }
     }
 }

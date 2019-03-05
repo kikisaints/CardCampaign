@@ -9,17 +9,19 @@
 
     <Grid Background="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Top">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid x:ConnectionId='1' Grid.Row="0" Margin="5,0" x:Name="infoHeader" VerticalAlignment="Top" HorizontalAlignment="Center">
             <StackPanel VerticalAlignment="Top">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
-                    <TextBlock x:ConnectionId='6' x:Name="header" Text="HEADER TITLE" Style="{ThemeResource CaptionTextBlockStyle}" TextAlignment="Center" Foreground="{ThemeResource UserSelectedCardBrush}"/>
-                    <FontIcon x:ConnectionId='7' x:Name="contentChevron" Glyph="&#xE70D;" Margin="10, 0, 0, 0" FontSize="13" Visibility="Collapsed"/>
+                    <TextBlock x:ConnectionId='6' x:Name="header" Text="HEADER TITLE" Style="{ThemeResource CaptionTextBlockStyle}" TextAlignment="Center"                                   
+                                                                                                                 Foreground="{ThemeResource UserSelectedCardBrush}"/>
+                    <FontIcon x:ConnectionId='7' x:Name="contentChevron" Glyph="&#xE70D;" Margin="10, 0, 0, 0" FontSize="13" Visibility="Collapsed"                                  />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
-                    <TextBlock x:ConnectionId='4' x:Name="subheader" Text="SUB HEADER TITLE" Style="{ThemeResource CaptionTextBlockStyle}" FontSize="11" FontStyle="Italic" TextAlignment="Center" Foreground="{ThemeResource UserSelectedCardBrush}"/>
+                    <TextBlock x:ConnectionId='4' x:Name="subheader" Text="SUB HEADER TITLE" Style="{ThemeResource CaptionTextBlockStyle}" FontSize="11"                                   
+                                                                                                                 FontStyle="Italic" TextAlignment="Center" Foreground="{ThemeResource UserSelectedCardBrush}"/>
                     <FontIcon x:ConnectionId='5' x:Name="subContentChevron" Glyph="&#xE70D;" Margin="10, 0, 0, 0" FontSize="13" Visibility="Collapsed"                                  />
                 </StackPanel>
             </StackPanel>

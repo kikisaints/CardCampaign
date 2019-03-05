@@ -108,5 +108,11 @@ namespace Card_Campaign.Controls
             get { return sp.ContentText; }
             set { sp.ContentText = (string)value; }
         }
+
+        public string Alignment
+        {
+            get { return AlignmentTextB.Text; }
+            set { AlignmentTextB.Text = (string)value; }
+        }
     }
 }

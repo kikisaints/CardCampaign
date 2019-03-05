@@ -414,7 +414,6 @@ namespace Card_Campaign.Card_Campaign_XamlTypeInfo
                 userType.AddMemberName("ACStat");
                 userType.AddMemberName("HPStat");
                 userType.AddMemberName("SPStat");
-                userType.AddMemberName("Alignment");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -764,92 +763,82 @@ namespace Card_Campaign.Card_Campaign_XamlTypeInfo
             var that = (global::Card_Campaign.Controls.MonsterCard)instance;
             that.SPStat = (global::System.String)Value;
         }
-        private object get_25_MonsterCard_Alignment(object instance)
-        {
-            var that = (global::Card_Campaign.Controls.MonsterCard)instance;
-            return that.Alignment;
-        }
-        private void set_25_MonsterCard_Alignment(object instance, object Value)
-        {
-            var that = (global::Card_Campaign.Controls.MonsterCard)instance;
-            that.Alignment = (global::System.String)Value;
-        }
-        private object get_26_NewCampaignCardBlank_PlayerName(object instance)
+        private object get_25_NewCampaignCardBlank_PlayerName(object instance)
         {
             var that = (global::Card_Campaign.NewCampaignCardBlank)instance;
             return that.PlayerName;
         }
-        private void set_26_NewCampaignCardBlank_PlayerName(object instance, object Value)
+        private void set_25_NewCampaignCardBlank_PlayerName(object instance, object Value)
         {
             var that = (global::Card_Campaign.NewCampaignCardBlank)instance;
             that.PlayerName = (global::System.String)Value;
         }
-        private object get_27_MainPage_FrameRef(object instance)
+        private object get_26_MainPage_FrameRef(object instance)
         {
             var that = (global::Card_Campaign.MainPage)instance;
             return that.FrameRef;
         }
-        private void set_27_MainPage_FrameRef(object instance, object Value)
+        private void set_26_MainPage_FrameRef(object instance, object Value)
         {
             var that = (global::Card_Campaign.MainPage)instance;
             that.FrameRef = (global::Windows.UI.Xaml.Controls.Frame)Value;
         }
-        private object get_28_MonsterTag_Alignment(object instance)
+        private object get_27_MonsterTag_Alignment(object instance)
         {
             var that = (global::Card_Campaign.MonsterTag)instance;
             return that.Alignment;
         }
-        private void set_28_MonsterTag_Alignment(object instance, object Value)
+        private void set_27_MonsterTag_Alignment(object instance, object Value)
         {
             var that = (global::Card_Campaign.MonsterTag)instance;
             that.Alignment = (global::System.String)Value;
         }
-        private object get_29_MonsterTag_ChallengeRating(object instance)
+        private object get_28_MonsterTag_ChallengeRating(object instance)
         {
             var that = (global::Card_Campaign.MonsterTag)instance;
             return that.ChallengeRating;
         }
-        private void set_29_MonsterTag_ChallengeRating(object instance, object Value)
+        private void set_28_MonsterTag_ChallengeRating(object instance, object Value)
         {
             var that = (global::Card_Campaign.MonsterTag)instance;
             that.ChallengeRating = (global::System.String)Value;
         }
-        private object get_30_MonsterTag_FloatChallengeRating(object instance)
+        private object get_29_MonsterTag_FloatChallengeRating(object instance)
         {
             var that = (global::Card_Campaign.MonsterTag)instance;
             return that.FloatChallengeRating;
         }
-        private void set_30_MonsterTag_FloatChallengeRating(object instance, object Value)
+        private void set_29_MonsterTag_FloatChallengeRating(object instance, object Value)
         {
             var that = (global::Card_Campaign.MonsterTag)instance;
             that.FloatChallengeRating = (global::System.Single)Value;
         }
-        private object get_31_MonsterTag_CreatureName(object instance)
+        private object get_30_MonsterTag_CreatureName(object instance)
         {
             var that = (global::Card_Campaign.MonsterTag)instance;
             return that.CreatureName;
         }
-        private void set_31_MonsterTag_CreatureName(object instance, object Value)
+        private void set_30_MonsterTag_CreatureName(object instance, object Value)
         {
             var that = (global::Card_Campaign.MonsterTag)instance;
             that.CreatureName = (global::System.String)Value;
         }
-        private object get_32_PlayerTag_PlayerName(object instance)
+        private object get_31_PlayerTag_PlayerName(object instance)
         {
             var that = (global::Card_Campaign.PlayerTag)instance;
             return that.PlayerName;
         }
-        private void set_32_PlayerTag_PlayerName(object instance, object Value)
+        private void set_31_PlayerTag_PlayerName(object instance, object Value)
         {
             var that = (global::Card_Campaign.PlayerTag)instance;
             that.PlayerName = (global::System.String)Value;
         }
-        private object get_33_PlayerTag_IsCanceled(object instance)
+        private object get_32_PlayerTag_IsCanceled(object instance)
         {
             var that = (global::Card_Campaign.PlayerTag)instance;
             return that.IsCanceled;
         }
-        private void set_33_PlayerTag_IsCanceled(object instance, object Value)
+        private void set_32_PlayerTag_IsCanceled(object instance, object Value)
         {
             var that = (global::Card_Campaign.PlayerTag)instance;
             that.IsCanceled = (global::System.Boolean)Value;
@@ -1010,65 +999,59 @@ namespace Card_Campaign.Card_Campaign_XamlTypeInfo
                 xamlMember.Getter = get_24_MonsterCard_SPStat;
                 xamlMember.Setter = set_24_MonsterCard_SPStat;
                 break;
-            case "Card_Campaign.Controls.MonsterCard.Alignment":
-                userType = (global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Card_Campaign.Controls.MonsterCard");
-                xamlMember = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlMember(this, "Alignment", "String");
-                xamlMember.Getter = get_25_MonsterCard_Alignment;
-                xamlMember.Setter = set_25_MonsterCard_Alignment;
-                break;
             case "Card_Campaign.NewCampaignCardBlank.PlayerName":
                 userType = (global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Card_Campaign.NewCampaignCardBlank");
                 xamlMember = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlMember(this, "PlayerName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_26_NewCampaignCardBlank_PlayerName;
-                xamlMember.Setter = set_26_NewCampaignCardBlank_PlayerName;
+                xamlMember.Getter = get_25_NewCampaignCardBlank_PlayerName;
+                xamlMember.Setter = set_25_NewCampaignCardBlank_PlayerName;
                 break;
             case "Card_Campaign.MainPage.FrameRef":
                 userType = (global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Card_Campaign.MainPage");
                 xamlMember = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlMember(this, "FrameRef", "Windows.UI.Xaml.Controls.Frame");
-                xamlMember.Getter = get_27_MainPage_FrameRef;
-                xamlMember.Setter = set_27_MainPage_FrameRef;
+                xamlMember.Getter = get_26_MainPage_FrameRef;
+                xamlMember.Setter = set_26_MainPage_FrameRef;
                 break;
             case "Card_Campaign.MonsterTag.Alignment":
                 userType = (global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Card_Campaign.MonsterTag");
                 xamlMember = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlMember(this, "Alignment", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_28_MonsterTag_Alignment;
-                xamlMember.Setter = set_28_MonsterTag_Alignment;
+                xamlMember.Getter = get_27_MonsterTag_Alignment;
+                xamlMember.Setter = set_27_MonsterTag_Alignment;
                 break;
             case "Card_Campaign.MonsterTag.ChallengeRating":
                 userType = (global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Card_Campaign.MonsterTag");
                 xamlMember = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlMember(this, "ChallengeRating", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_29_MonsterTag_ChallengeRating;
-                xamlMember.Setter = set_29_MonsterTag_ChallengeRating;
+                xamlMember.Getter = get_28_MonsterTag_ChallengeRating;
+                xamlMember.Setter = set_28_MonsterTag_ChallengeRating;
                 break;
             case "Card_Campaign.MonsterTag.FloatChallengeRating":
                 userType = (global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Card_Campaign.MonsterTag");
                 xamlMember = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlMember(this, "FloatChallengeRating", "Single");
-                xamlMember.Getter = get_30_MonsterTag_FloatChallengeRating;
-                xamlMember.Setter = set_30_MonsterTag_FloatChallengeRating;
+                xamlMember.Getter = get_29_MonsterTag_FloatChallengeRating;
+                xamlMember.Setter = set_29_MonsterTag_FloatChallengeRating;
                 break;
             case "Card_Campaign.MonsterTag.CreatureName":
                 userType = (global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Card_Campaign.MonsterTag");
                 xamlMember = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlMember(this, "CreatureName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_31_MonsterTag_CreatureName;
-                xamlMember.Setter = set_31_MonsterTag_CreatureName;
+                xamlMember.Getter = get_30_MonsterTag_CreatureName;
+                xamlMember.Setter = set_30_MonsterTag_CreatureName;
                 break;
             case "Card_Campaign.PlayerTag.PlayerName":
                 userType = (global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Card_Campaign.PlayerTag");
                 xamlMember = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlMember(this, "PlayerName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_32_PlayerTag_PlayerName;
-                xamlMember.Setter = set_32_PlayerTag_PlayerName;
+                xamlMember.Getter = get_31_PlayerTag_PlayerName;
+                xamlMember.Setter = set_31_PlayerTag_PlayerName;
                 break;
             case "Card_Campaign.PlayerTag.IsCanceled":
                 userType = (global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Card_Campaign.PlayerTag");
                 xamlMember = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlMember(this, "IsCanceled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_33_PlayerTag_IsCanceled;
-                xamlMember.Setter = set_33_PlayerTag_IsCanceled;
+                xamlMember.Getter = get_32_PlayerTag_IsCanceled;
+                xamlMember.Setter = set_32_PlayerTag_IsCanceled;
                 break;
             }
             return xamlMember;

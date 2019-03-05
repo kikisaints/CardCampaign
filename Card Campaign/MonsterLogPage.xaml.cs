@@ -367,6 +367,8 @@ namespace Card_Campaign
                 monsterCardFlyout.CharismaStat = GetAbilityScore(((App)Application.Current).CheckBeastCHA(mName));
 
                 FillDetailsList(mName);
+
+                monsterCardFlyout.Alignment = mTag.Alignment;
             }
         }
 
@@ -401,6 +403,9 @@ namespace Card_Campaign
                     monsterDetails.SubHeaderVisibility = Visibility.Collapsed;
                 if (content == "")
                     monsterDetails.ContentVisibility = Visibility.Collapsed;
+
+                if (header == "CHALLENGE")
+                    monsterCardFlyout.EXPStat = content;
                 
                 if(content.Length > 80)
                 {
