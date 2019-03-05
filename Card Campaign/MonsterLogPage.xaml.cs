@@ -365,7 +365,44 @@ namespace Card_Campaign
                 monsterCardFlyout.IntelligenceStat = GetAbilityScore(((App)Application.Current).CheckBeastINT(mName));
                 monsterCardFlyout.WisdomStat = GetAbilityScore(((App)Application.Current).CheckBeastWIS(mName));
                 monsterCardFlyout.CharismaStat = GetAbilityScore(((App)Application.Current).CheckBeastCHA(mName));
+
+                FillDetailsList(mName);
             }
+        }
+
+        private void FillDetailsList(string monsterName)
+        {
+            int monsterIndex = 0;
+            List<MonsterDetails> fullList = new List<MonsterDetails>();
+
+            while (monsterIndex != -1)
+            {
+                string header = "";
+                string subheader = "";
+                string content = "";
+
+                ((App)Application.Current).CheckMonsterAbilitiesList(monsterName, ref header, ref subheader, ref content, ref monsterIndex);
+                if (monsterIndex == -1)
+                    break;
+
+                MonsterDetails monsterDetails = new MonsterDetails();
+                monsterDetails.HeaderText = header;
+                monsterDetails.SubHeaderText = subheader;
+                monsterDetails.ContentText = content;
+
+                if (header == "")
+                    monsterDetails.HeaderVisibility = Visibility.Collapsed;
+                if (subheader == "")
+                    monsterDetails.SubHeaderVisibility = Visibility.Collapsed;
+                if (content == "")
+                    monsterDetails.ContentVisibility = Visibility.Collapsed;
+
+                monsterDetails.LeftAlignDetailContent();
+                fullList.Add(monsterDetails);
+                monsterIndex++;
+            }
+
+            monsterCardFlyout.AddMonsterDetailsToList(fullList);
         }
 
         private void MonsterTagFlyout_Closing(FlyoutBase sender, FlyoutBaseClosingEventArgs args)

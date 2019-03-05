@@ -179,11 +179,11 @@
                     <Thickness x:Key="statMargins">2,3</Thickness>
                 </Grid.Resources>
                 <StackPanel Orientation="Horizontal">
-                    <local:MonsterDetails x:ConnectionId='7' x:Name="ac" HeaderText="ARMOR CLASS" ContentText="00 (armor info)"
+                    <local:MonsterDetails x:ConnectionId='7' x:Name="ac" HeaderText="ARMOR CLASS" SubHeaderVisibility="Collapsed" ContentText="00 (armor info)"
                         Margin="{StaticResource statMargins}"/>
-                    <local:MonsterDetails x:ConnectionId='8' x:Name="hp" HeaderText="HIT POINTS" ContentText="00 (0d0+0)"
+                    <local:MonsterDetails x:ConnectionId='8' x:Name="hp" HeaderText="HIT POINTS" SubHeaderVisibility="Collapsed" ContentText="00 (0d0+0)"
                         Margin="{StaticResource statMargins}"/>
-                    <local:MonsterDetails x:ConnectionId='9' x:Name="sp" HeaderText="SPEED" ContentText="0 ft."
+                    <local:MonsterDetails x:ConnectionId='9' x:Name="sp" HeaderText="SPEED" SubHeaderVisibility="Collapsed" ContentText="0 ft."
                         Margin="{StaticResource statMargins}"/>
                 </StackPanel>
             </Grid>
@@ -194,15 +194,6 @@
               CornerRadius="1,0,0,0"
               Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
             <ListView x:ConnectionId='3' x:Name="detailInfoList" SelectionMode="None" Height="220">
-                <local:MonsterDetails HeaderText="INFO" ContentText="N/A"/>
-                <local:MonsterDetails HeaderText="INFO" ContentText="N/A"/>
-                <local:MonsterDetails HeaderText="INFO" ContentText="N/A"/>
-                <local:MonsterDetails HeaderText="INFO" ContentText="N/A"/>
-                <local:MonsterDetails HeaderText="INFO" ContentText="N/A"/>
-                <local:MonsterDetails HeaderText="INFO" ContentText="N/A"/>
-                <local:MonsterDetails HeaderText="INFO" ContentText="N/A"/>
-                <local:MonsterDetails HeaderText="INFO" ContentText="N/A"/>
-                <local:MonsterDetails HeaderText="ACTIONS" ContentText="N/A"/>
             </ListView>
         </Grid>
 

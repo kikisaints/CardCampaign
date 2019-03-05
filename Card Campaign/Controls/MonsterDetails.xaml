@@ -12,10 +12,13 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0" Margin="5,0" x:Name="infoHeader" VerticalAlignment="Top" HorizontalAlignment="Stretch">
-            <TextBlock x:Name="header" Text="HEADER TITLE" Style="{ThemeResource CaptionTextBlockStyle}" TextAlignment="Center" Foreground="{ThemeResource UserSelectedCardBrush}"/>
+        <Grid Grid.Row="0" Margin="5,0" x:Name="infoHeader" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <StackPanel>
+                <TextBlock x:Name="header" Text="HEADER TITLE" Style="{ThemeResource CaptionTextBlockStyle}" TextAlignment="Center" Foreground="{ThemeResource UserSelectedCardBrush}"/>
+                <TextBlock x:Name="subheader" Text="SUB HEADER TITLE" Style="{ThemeResource CaptionTextBlockStyle}" FontSize="11" FontStyle="Italic" TextAlignment="Center" Foreground="{ThemeResource UserSelectedCardBrush}"/>
+            </StackPanel>
         </Grid>
-        <Grid Grid.Row="1" Margin="10,0" x:Name="infoDetail" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+        <Grid Grid.Row="1" Margin="10,0" x:Name="infoDetail" VerticalAlignment="Top" HorizontalAlignment="Center">
             <TextBlock x:Name="content" Text="Lorem ipsum" Style="{ThemeResource CaptionTextBlockStyle}" TextAlignment="Center" TextWrapping="Wrap"/>
         </Grid>
     </Grid>

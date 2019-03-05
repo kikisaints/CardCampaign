@@ -22,16 +22,14 @@ namespace Card_Campaign.Controls
         public MonsterCard()
         {
             this.InitializeComponent();
+            //DetailsList = new List<MonsterDetails>();
         }
 
 
-        public static readonly DependencyProperty DetailsListProperty =
-        DependencyProperty.RegisterAttached(
-          "DetailsList",
-          typeof(List<MonsterDetails>),
-          typeof(MonsterTag),
-          new PropertyMetadata(false)
-        );
+        public void AddMonsterDetailsToList(List<MonsterDetails> list)
+        {
+            detailInfoList.ItemsSource = list;
+        }
 
         public List<MonsterDetails> DetailsList
         {

@@ -92,6 +92,20 @@ namespace Card_Campaign
         {
             return Bestiary.UpdateBeastiary(name).sizeAndtype;
         }
+        public void CheckMonsterAbilitiesList(string name, ref string header, ref string sub, ref string content, ref int index)
+        {
+            if (index < Bestiary.UpdateBeastiary(name).abilitiesAndActions.Count)
+            {
+                List<MonsterInfo.AbilitiesAndActions> ana = Bestiary.UpdateBeastiary(name).abilitiesAndActions;
+                header = ana[index].title.ToUpper();
+                sub = ana[index].subtitle.ToUpper();
+                content = ana[index].discription;
+            }
+            else
+            {
+                index = -1;
+            }
+        }
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points

@@ -497,10 +497,10 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="SelectionMode" />
       <RootProperty Name="Height" />
-      <RootProperty Name="Items" />
     </RootType>
     <RootType FullName="Card_Campaign.Controls.MonsterDetails">
       <RootProperty Name="HeaderText" />
+      <RootProperty Name="SubHeaderVisibility" />
       <RootProperty Name="ContentText" />
       <RootProperty Name="Margin" />
     </RootType>
