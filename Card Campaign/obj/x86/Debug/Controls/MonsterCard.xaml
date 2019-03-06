@@ -12,7 +12,7 @@
     <UserControl.Resources>
     </UserControl.Resources>
 
-    <Grid CornerRadius="5" BorderThickness="1" BorderBrush="#ff858585" Width="280">
+    <Grid CornerRadius="5" BorderThickness="1" BorderBrush="#60858585" Width="280">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>

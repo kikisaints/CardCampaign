@@ -254,10 +254,6 @@ namespace Card_Campaign
             if(args.CheckCurrent() && sender.Text != null)
             {
                 //List<string> suggestion = new List<string>();
-
-                var sortResult = monsterSortOC.OrderByDescending(a => a.CreatureName.Contains(sender.Text));
-                MonsterLogList.ItemsSource = sortResult;
-                GrabSortedNameCollection(sender.Text);
                 //foreach (string s in monsterNamesList)
                 //{
                 //    string checkList = "";
@@ -291,9 +287,11 @@ namespace Card_Campaign
 
         private void searchLog_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
         {
-            if (args.ChosenSuggestion != null)
+            if (sender.Text != null && sender.Text != "")
             {
-                //searchLog.Text = args.ChosenSuggestion.ToString();
+                var sortResult = monsterSortOC.OrderByDescending(a => a.CreatureName.Contains(sender.Text));
+                MonsterLogList.ItemsSource = sortResult;
+                GrabSortedNameCollection(sender.Text);
             }
         }
 

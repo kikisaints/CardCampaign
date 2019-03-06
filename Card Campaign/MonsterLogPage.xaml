@@ -11,7 +11,7 @@
     <Page.Resources>
         <SolidColorBrush x:Key="GridViewItemRevealBorderBrush" Color="Transparent"/>
         <Thickness x:Key="GridViewItemRevealBorderThemeThickness">0</Thickness>
-        <SolidColorBrush x:Key="GridViewItemRevealBackground" Color="Transparent"/>
+        <SolidColorBrush x:Key="GridViewItemRevealBackground" Color="Transparent"/>       
 
         <Flyout x:Name="MonsterTagFlyout" LightDismissOverlayMode="On" Placement="Full" Closing="MonsterTagFlyout_Closing">
             <Flyout.FlyoutPresenterStyle>
@@ -43,7 +43,7 @@
             <AutoSuggestBox x:Name="searchLog" 
                             TextChanged="searchLog_TextChanged"
                             Margin="10,15,5,5" 
-                            PlaceholderText="Search Catalog" 
+                            PlaceholderText="Search (case sensitive)" 
                             Width="250" 
                             QueryIcon="Zoom"
                             SuggestionChosen="searchLog_SuggestionChosen"
