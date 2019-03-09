@@ -1,4 +1,6 @@
 WinMetadata\Windows.winmd
+Assets\Banner_1.jpg
+Assets\Banner_2.jpg
 Assets\BottomPattern.png
 Assets\LockScreenLogo.scale-200.png
 Assets\RedDragon_Larger.png
@@ -11,6 +13,7 @@ Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 App.xbf
 CampaignCard.xbf
+CampaignMainPage.xbf
 Card Campaign.xr.xml
 Controls\BaseCard.xbf
 Controls\BlankCampaignCard.xbf

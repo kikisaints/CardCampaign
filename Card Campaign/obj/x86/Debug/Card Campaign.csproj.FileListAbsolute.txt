@@ -1617,3 +1617,8 @@ C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\obj\x86\Debug\qualifi
 C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\obj\x86\Debug\CampaignMainPage.g.i.cs
+C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\obj\x86\Debug\CampaignMainPage.g.cs
+C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\obj\x86\Debug\CampaignMainPage.xaml
+C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\obj\x86\Debug\CampaignMainPage.xbf
+C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\CampaignMainPage.xbf

@@ -180,69 +180,71 @@ namespace Card_Campaign.Card_Campaign_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[30];
+            _typeNameTable = new string[31];
             _typeNameTable[0] = "Windows.UI.Color";
             _typeNameTable[1] = "System.ValueType";
             _typeNameTable[2] = "Object";
             _typeNameTable[3] = "Byte";
-            _typeNameTable[4] = "Card_Campaign.DropShadowEffect";
-            _typeNameTable[5] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[6] = "Card_Campaign.CampaignCard";
-            _typeNameTable[7] = "Windows.UI.Xaml.Controls.GridView";
-            _typeNameTable[8] = "Card_Campaign.BaseCard";
-            _typeNameTable[9] = "Card_Campaign.Controls.BlankCampaignCard";
-            _typeNameTable[10] = "Card_Campaign.Controls.MonsterDetails";
-            _typeNameTable[11] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[12] = "String";
-            _typeNameTable[13] = "Windows.UI.Xaml.Visibility";
-            _typeNameTable[14] = "Card_Campaign.Controls.MonsterCard";
-            _typeNameTable[15] = "System.Collections.Generic.List`1<Card_Campaign.Controls.MonsterDetails>";
-            _typeNameTable[16] = "Card_Campaign.NewCampaignCardBlank";
-            _typeNameTable[17] = "Card_Campaign.HomePage";
-            _typeNameTable[18] = "Card_Campaign.LoadingPage";
-            _typeNameTable[19] = "Card_Campaign.MainPage";
-            _typeNameTable[20] = "Windows.UI.Xaml.Controls.Frame";
-            _typeNameTable[21] = "Card_Campaign.MonsterLogPage";
-            _typeNameTable[22] = "Card_Campaign.MonsterTag";
-            _typeNameTable[23] = "Single";
-            _typeNameTable[24] = "Card_Campaign.WrapPanel";
-            _typeNameTable[25] = "Windows.UI.Xaml.Controls.Panel";
-            _typeNameTable[26] = "Card_Campaign.PlayerTag";
-            _typeNameTable[27] = "Boolean";
-            _typeNameTable[28] = "Card_Campaign.SettingsPage";
-            _typeNameTable[29] = "Card_Campaign.SpellLogPage";
+            _typeNameTable[4] = "Card_Campaign.CampaignMainPage";
+            _typeNameTable[5] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[6] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[7] = "Card_Campaign.DropShadowEffect";
+            _typeNameTable[8] = "Card_Campaign.CampaignCard";
+            _typeNameTable[9] = "Windows.UI.Xaml.Controls.GridView";
+            _typeNameTable[10] = "Card_Campaign.BaseCard";
+            _typeNameTable[11] = "Card_Campaign.Controls.BlankCampaignCard";
+            _typeNameTable[12] = "Card_Campaign.Controls.MonsterDetails";
+            _typeNameTable[13] = "String";
+            _typeNameTable[14] = "Windows.UI.Xaml.Visibility";
+            _typeNameTable[15] = "Card_Campaign.Controls.MonsterCard";
+            _typeNameTable[16] = "System.Collections.Generic.List`1<Card_Campaign.Controls.MonsterDetails>";
+            _typeNameTable[17] = "Card_Campaign.NewCampaignCardBlank";
+            _typeNameTable[18] = "Card_Campaign.HomePage";
+            _typeNameTable[19] = "Card_Campaign.LoadingPage";
+            _typeNameTable[20] = "Card_Campaign.MainPage";
+            _typeNameTable[21] = "Windows.UI.Xaml.Controls.Frame";
+            _typeNameTable[22] = "Card_Campaign.MonsterLogPage";
+            _typeNameTable[23] = "Card_Campaign.MonsterTag";
+            _typeNameTable[24] = "Single";
+            _typeNameTable[25] = "Card_Campaign.WrapPanel";
+            _typeNameTable[26] = "Windows.UI.Xaml.Controls.Panel";
+            _typeNameTable[27] = "Card_Campaign.PlayerTag";
+            _typeNameTable[28] = "Boolean";
+            _typeNameTable[29] = "Card_Campaign.SettingsPage";
+            _typeNameTable[30] = "Card_Campaign.SpellLogPage";
 
-            _typeTable = new global::System.Type[30];
+            _typeTable = new global::System.Type[31];
             _typeTable[0] = typeof(global::Windows.UI.Color);
             _typeTable[1] = typeof(global::System.ValueType);
             _typeTable[2] = typeof(global::System.Object);
             _typeTable[3] = typeof(global::System.Byte);
-            _typeTable[4] = typeof(global::Card_Campaign.DropShadowEffect);
-            _typeTable[5] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[6] = typeof(global::Card_Campaign.CampaignCard);
-            _typeTable[7] = typeof(global::Windows.UI.Xaml.Controls.GridView);
-            _typeTable[8] = typeof(global::Card_Campaign.BaseCard);
-            _typeTable[9] = typeof(global::Card_Campaign.Controls.BlankCampaignCard);
-            _typeTable[10] = typeof(global::Card_Campaign.Controls.MonsterDetails);
-            _typeTable[11] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[12] = typeof(global::System.String);
-            _typeTable[13] = typeof(global::Windows.UI.Xaml.Visibility);
-            _typeTable[14] = typeof(global::Card_Campaign.Controls.MonsterCard);
-            _typeTable[15] = typeof(global::System.Collections.Generic.List<global::Card_Campaign.Controls.MonsterDetails>);
-            _typeTable[16] = typeof(global::Card_Campaign.NewCampaignCardBlank);
-            _typeTable[17] = typeof(global::Card_Campaign.HomePage);
-            _typeTable[18] = typeof(global::Card_Campaign.LoadingPage);
-            _typeTable[19] = typeof(global::Card_Campaign.MainPage);
-            _typeTable[20] = typeof(global::Windows.UI.Xaml.Controls.Frame);
-            _typeTable[21] = typeof(global::Card_Campaign.MonsterLogPage);
-            _typeTable[22] = typeof(global::Card_Campaign.MonsterTag);
-            _typeTable[23] = typeof(global::System.Single);
-            _typeTable[24] = typeof(global::Card_Campaign.WrapPanel);
-            _typeTable[25] = typeof(global::Windows.UI.Xaml.Controls.Panel);
-            _typeTable[26] = typeof(global::Card_Campaign.PlayerTag);
-            _typeTable[27] = typeof(global::System.Boolean);
-            _typeTable[28] = typeof(global::Card_Campaign.SettingsPage);
-            _typeTable[29] = typeof(global::Card_Campaign.SpellLogPage);
+            _typeTable[4] = typeof(global::Card_Campaign.CampaignMainPage);
+            _typeTable[5] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[6] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[7] = typeof(global::Card_Campaign.DropShadowEffect);
+            _typeTable[8] = typeof(global::Card_Campaign.CampaignCard);
+            _typeTable[9] = typeof(global::Windows.UI.Xaml.Controls.GridView);
+            _typeTable[10] = typeof(global::Card_Campaign.BaseCard);
+            _typeTable[11] = typeof(global::Card_Campaign.Controls.BlankCampaignCard);
+            _typeTable[12] = typeof(global::Card_Campaign.Controls.MonsterDetails);
+            _typeTable[13] = typeof(global::System.String);
+            _typeTable[14] = typeof(global::Windows.UI.Xaml.Visibility);
+            _typeTable[15] = typeof(global::Card_Campaign.Controls.MonsterCard);
+            _typeTable[16] = typeof(global::System.Collections.Generic.List<global::Card_Campaign.Controls.MonsterDetails>);
+            _typeTable[17] = typeof(global::Card_Campaign.NewCampaignCardBlank);
+            _typeTable[18] = typeof(global::Card_Campaign.HomePage);
+            _typeTable[19] = typeof(global::Card_Campaign.LoadingPage);
+            _typeTable[20] = typeof(global::Card_Campaign.MainPage);
+            _typeTable[21] = typeof(global::Windows.UI.Xaml.Controls.Frame);
+            _typeTable[22] = typeof(global::Card_Campaign.MonsterLogPage);
+            _typeTable[23] = typeof(global::Card_Campaign.MonsterTag);
+            _typeTable[24] = typeof(global::System.Single);
+            _typeTable[25] = typeof(global::Card_Campaign.WrapPanel);
+            _typeTable[26] = typeof(global::Windows.UI.Xaml.Controls.Panel);
+            _typeTable[27] = typeof(global::Card_Campaign.PlayerTag);
+            _typeTable[28] = typeof(global::System.Boolean);
+            _typeTable[29] = typeof(global::Card_Campaign.SettingsPage);
+            _typeTable[30] = typeof(global::Card_Campaign.SpellLogPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -277,24 +279,25 @@ namespace Card_Campaign.Card_Campaign_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_4_DropShadowEffect() { return new global::Card_Campaign.DropShadowEffect(); }
-        private object Activate_6_CampaignCard() { return new global::Card_Campaign.CampaignCard(); }
-        private object Activate_8_BaseCard() { return new global::Card_Campaign.BaseCard(); }
-        private object Activate_9_BlankCampaignCard() { return new global::Card_Campaign.Controls.BlankCampaignCard(); }
-        private object Activate_10_MonsterDetails() { return new global::Card_Campaign.Controls.MonsterDetails(); }
-        private object Activate_14_MonsterCard() { return new global::Card_Campaign.Controls.MonsterCard(); }
-        private object Activate_15_List() { return new global::System.Collections.Generic.List<global::Card_Campaign.Controls.MonsterDetails>(); }
-        private object Activate_16_NewCampaignCardBlank() { return new global::Card_Campaign.NewCampaignCardBlank(); }
-        private object Activate_17_HomePage() { return new global::Card_Campaign.HomePage(); }
-        private object Activate_18_LoadingPage() { return new global::Card_Campaign.LoadingPage(); }
-        private object Activate_19_MainPage() { return new global::Card_Campaign.MainPage(); }
-        private object Activate_21_MonsterLogPage() { return new global::Card_Campaign.MonsterLogPage(); }
-        private object Activate_22_MonsterTag() { return new global::Card_Campaign.MonsterTag(); }
-        private object Activate_24_WrapPanel() { return new global::Card_Campaign.WrapPanel(); }
-        private object Activate_26_PlayerTag() { return new global::Card_Campaign.PlayerTag(); }
-        private object Activate_28_SettingsPage() { return new global::Card_Campaign.SettingsPage(); }
-        private object Activate_29_SpellLogPage() { return new global::Card_Campaign.SpellLogPage(); }
-        private void VectorAdd_15_List(object instance, object item)
+        private object Activate_4_CampaignMainPage() { return new global::Card_Campaign.CampaignMainPage(); }
+        private object Activate_7_DropShadowEffect() { return new global::Card_Campaign.DropShadowEffect(); }
+        private object Activate_8_CampaignCard() { return new global::Card_Campaign.CampaignCard(); }
+        private object Activate_10_BaseCard() { return new global::Card_Campaign.BaseCard(); }
+        private object Activate_11_BlankCampaignCard() { return new global::Card_Campaign.Controls.BlankCampaignCard(); }
+        private object Activate_12_MonsterDetails() { return new global::Card_Campaign.Controls.MonsterDetails(); }
+        private object Activate_15_MonsterCard() { return new global::Card_Campaign.Controls.MonsterCard(); }
+        private object Activate_16_List() { return new global::System.Collections.Generic.List<global::Card_Campaign.Controls.MonsterDetails>(); }
+        private object Activate_17_NewCampaignCardBlank() { return new global::Card_Campaign.NewCampaignCardBlank(); }
+        private object Activate_18_HomePage() { return new global::Card_Campaign.HomePage(); }
+        private object Activate_19_LoadingPage() { return new global::Card_Campaign.LoadingPage(); }
+        private object Activate_20_MainPage() { return new global::Card_Campaign.MainPage(); }
+        private object Activate_22_MonsterLogPage() { return new global::Card_Campaign.MonsterLogPage(); }
+        private object Activate_23_MonsterTag() { return new global::Card_Campaign.MonsterTag(); }
+        private object Activate_25_WrapPanel() { return new global::Card_Campaign.WrapPanel(); }
+        private object Activate_27_PlayerTag() { return new global::Card_Campaign.PlayerTag(); }
+        private object Activate_29_SettingsPage() { return new global::Card_Campaign.SettingsPage(); }
+        private object Activate_30_SpellLogPage() { return new global::Card_Campaign.SpellLogPage(); }
+        private void VectorAdd_16_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Card_Campaign.Controls.MonsterDetails>)instance;
             var newItem = (global::Card_Campaign.Controls.MonsterDetails)item;
@@ -335,47 +338,58 @@ namespace Card_Campaign.Card_Campaign_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 4:   //  Card_Campaign.DropShadowEffect
-                userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_4_DropShadowEffect;
+            case 4:   //  Card_Campaign.CampaignMainPage
+                userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_CampaignMainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  Windows.UI.Xaml.Controls.UserControl
+            case 5:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  Card_Campaign.CampaignCard
+            case 6:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  Card_Campaign.DropShadowEffect
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_6_CampaignCard;
+                userType.Activator = Activate_7_DropShadowEffect;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  Card_Campaign.CampaignCard
+                userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_8_CampaignCard;
                 userType.AddMemberName("ParallaxGridViewRef");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  Windows.UI.Xaml.Controls.GridView
+            case 9:   //  Windows.UI.Xaml.Controls.GridView
                 xamlType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  Card_Campaign.BaseCard
+            case 10:   //  Card_Campaign.BaseCard
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_8_BaseCard;
+                userType.Activator = Activate_10_BaseCard;
                 userType.AddMemberName("ParallaxRef");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  Card_Campaign.Controls.BlankCampaignCard
+            case 11:   //  Card_Campaign.Controls.BlankCampaignCard
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_9_BlankCampaignCard;
+                userType.Activator = Activate_11_BlankCampaignCard;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  Card_Campaign.Controls.MonsterDetails
+            case 12:   //  Card_Campaign.Controls.MonsterDetails
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_MonsterDetails;
+                userType.Activator = Activate_12_MonsterDetails;
                 userType.AddMemberName("HeaderText");
                 userType.AddMemberName("SubHeaderVisibility");
                 userType.AddMemberName("ContentText");
@@ -386,21 +400,17 @@ namespace Card_Campaign.Card_Campaign_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 11:   //  Windows.UI.Xaml.Controls.Page
+            case 13:   //  String
                 xamlType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 12:   //  String
+            case 14:   //  Windows.UI.Xaml.Visibility
                 xamlType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 13:   //  Windows.UI.Xaml.Visibility
-                xamlType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 14:   //  Card_Campaign.Controls.MonsterCard
+            case 15:   //  Card_Campaign.Controls.MonsterCard
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_14_MonsterCard;
+                userType.Activator = Activate_15_MonsterCard;
                 userType.AddMemberName("DetailsList");
                 userType.AddMemberName("MonsterName");
                 userType.AddMemberName("StrengthStat");
@@ -419,57 +429,57 @@ namespace Card_Campaign.Card_Campaign_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 15:   //  System.Collections.Generic.List`1<Card_Campaign.Controls.MonsterDetails>
+            case 16:   //  System.Collections.Generic.List`1<Card_Campaign.Controls.MonsterDetails>
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_15_List;
+                userType.CollectionAdd = VectorAdd_16_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 16:   //  Card_Campaign.NewCampaignCardBlank
+            case 17:   //  Card_Campaign.NewCampaignCardBlank
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_16_NewCampaignCardBlank;
+                userType.Activator = Activate_17_NewCampaignCardBlank;
                 userType.AddMemberName("PlayerName");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  Card_Campaign.HomePage
+            case 18:   //  Card_Campaign.HomePage
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_HomePage;
+                userType.Activator = Activate_18_HomePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  Card_Campaign.LoadingPage
+            case 19:   //  Card_Campaign.LoadingPage
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_LoadingPage;
+                userType.Activator = Activate_19_LoadingPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  Card_Campaign.MainPage
+            case 20:   //  Card_Campaign.MainPage
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_MainPage;
+                userType.Activator = Activate_20_MainPage;
                 userType.AddMemberName("FrameRef");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 20:   //  Windows.UI.Xaml.Controls.Frame
+            case 21:   //  Windows.UI.Xaml.Controls.Frame
                 xamlType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 21:   //  Card_Campaign.MonsterLogPage
+            case 22:   //  Card_Campaign.MonsterLogPage
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_21_MonsterLogPage;
+                userType.Activator = Activate_22_MonsterLogPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 22:   //  Card_Campaign.MonsterTag
+            case 23:   //  Card_Campaign.MonsterTag
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_22_MonsterTag;
+                userType.Activator = Activate_23_MonsterTag;
                 userType.AddMemberName("Alignment");
                 userType.AddMemberName("ChallengeRating");
                 userType.AddMemberName("FloatChallengeRating");
@@ -478,44 +488,44 @@ namespace Card_Campaign.Card_Campaign_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 23:   //  Single
+            case 24:   //  Single
                 xamlType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 24:   //  Card_Campaign.WrapPanel
+            case 25:   //  Card_Campaign.WrapPanel
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Panel"));
-                userType.Activator = Activate_24_WrapPanel;
+                userType.Activator = Activate_25_WrapPanel;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 25:   //  Windows.UI.Xaml.Controls.Panel
+            case 26:   //  Windows.UI.Xaml.Controls.Panel
                 xamlType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 26:   //  Card_Campaign.PlayerTag
+            case 27:   //  Card_Campaign.PlayerTag
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_26_PlayerTag;
+                userType.Activator = Activate_27_PlayerTag;
                 userType.AddMemberName("PlayerName");
                 userType.AddMemberName("IsCanceled");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 27:   //  Boolean
+            case 28:   //  Boolean
                 xamlType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 28:   //  Card_Campaign.SettingsPage
+            case 29:   //  Card_Campaign.SettingsPage
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_28_SettingsPage;
+                userType.Activator = Activate_29_SettingsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 29:   //  Card_Campaign.SpellLogPage
+            case 30:   //  Card_Campaign.SpellLogPage
                 userType = new global::Card_Campaign.Card_Campaign_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_29_SpellLogPage;
+                userType.Activator = Activate_30_SpellLogPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

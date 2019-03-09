@@ -32,9 +32,6 @@
             <GradientStop Color="#00000000" Offset="1"/>
         </LinearGradientBrush>
 
-
-        <SolidColorBrush x:Key="SmallButtonTransparency" Color="#BF000000"/>
-
         <SolidColorBrush x:Key="ForegroundButtonColor" Color="#ffb7b7b7"/>
         <SolidColorBrush x:Key="ForegroundButtonColorHover" Color="#60b7b7b7"/>
         <SolidColorBrush x:Key="ForegroundButtonColorPressed" Color="#ff702424"/>
@@ -759,9 +756,9 @@
                         </LinearGradientBrush>
                     </Rectangle.Fill>
                 </Rectangle>
-                
-                <Grid Grid.Row="1" x:Name="TitleGrid" VerticalAlignment="Stretch">
-                    <TextBlock x:Name="titleText" FontWeight="SemiBold" Margin="10,5,0,0" Text="Title" 
+
+                <Grid Grid.Row="1" x:Name="TitleGrid" Background="{StaticResource SmallButtonTransparency}" CornerRadius="0, 5, 5, 0" HorizontalAlignment="Left">
+                    <TextBlock x:Name="titleText" FontWeight="SemiBold" Margin="10,5,10,0" Text="Title" 
                                HorizontalAlignment="Left" Foreground="White" FontSize="20" VerticalAlignment="Top" FontFamily="Segoe UI Symbol"/>
                 </Grid>
                 
@@ -773,7 +770,7 @@
                             <TextBlock FontSize="9" Text="100" TextAlignment="Center" Foreground="{ThemeResource ForegroundButtonColor}"/>
                         </StackPanel>
                     </Grid>
-                    <Grid Background="{StaticResource SmallButtonTransparency}" ToolTipService.ToolTip="Plot Points" Width="46" Height="46" CornerRadius="46" Margin="2,2,0,2">
+                    <Grid Background="{StaticResource SmallButtonTransparency}" ToolTipService.ToolTip="Encounters" Width="46" Height="46" CornerRadius="46" Margin="2,2,0,2">
                         <StackPanel Margin="5,8,5,5">
                             <SymbolIcon Symbol="Bullets" Foreground="{ThemeResource ForegroundButtonColor}"/>
                             <TextBlock FontSize="9" Text="0" TextAlignment="Center" Foreground="{ThemeResource ForegroundButtonColor}"/>
@@ -806,8 +803,8 @@
                         <ColumnDefinition Width="247"/>
                     </Grid.ColumnDefinitions>
                     <Button Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Style="{StaticResource ButtonHoverStyle}"
-                        x:Name="EditGrid" Background="{ThemeResource UserSelectedCardColor}"
-                        FontFamily="Segoe UI Symbol" Content="&#xE104;" Foreground="White" FontSize="30" ToolTipService.ToolTip="Edit Campaign"/>
+                        x:Name="launchCampaign" Background="{ThemeResource UserSelectedCardColor}" Click="ShowCampaignWindow_Click"
+                        FontFamily="Segoe MDL2 Assets" Content="&#xE8A7;" Foreground="White" FontSize="30" ToolTipService.ToolTip="Open Campaign"/>
                     <TextBlock Grid.Row="1" Visibility="Collapsed" HorizontalAlignment="Right" VerticalAlignment="Bottom"
                                FontStyle="Italic" Text="00:00:00.0" Margin="0,0,8,5" Foreground="#40ffffff"/>
                 </Grid>

@@ -2,8 +2,8 @@
 <Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="CompactPaneLength" />
-    <RootPropertyPathName Name="PlayerName" />
     <RootPropertyPathName Name="Height" />
+    <RootPropertyPathName Name="PlayerName" />
     <RootPropertyPathName Name="Width" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -46,6 +46,7 @@
       <RootProperty Name="Template" />
       <RootProperty Name="VerticalContentAlignment" />
       <RootProperty Name="VerticalSnapPointsType" />
+      <RootProperty Name="Height" />
       <RootMethod Name="GetHorizontalScrollBarVisibility" />
       <RootMethod Name="SetHorizontalScrollBarVisibility" />
       <RootMethod Name="GetVerticalScrollBarVisibility" />
@@ -354,6 +355,7 @@
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="RelativeSource" />
       <RootProperty Name="Path" />
+      <RootProperty Name="ElementName" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.RelativeSource" />
     <RootType FullName="Windows.UI.Xaml.Controls.Viewbox">
@@ -379,9 +381,10 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Padding" />
-      <RootProperty Name="FontStyle" />
-      <RootProperty Name="FontWeight" />
       <RootProperty Name="Style" />
+      <RootProperty Name="Inlines" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="FontStyle" />
       <RootProperty Name="Width" />
       <RootProperty Name="RequestedTheme" />
       <RootEvent Name="Tapped" />
@@ -419,6 +422,35 @@
       <RootProperty Name="ViewportSize" />
       <RootProperty Name="HorizontalAlignment" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
+      <RootEvent Name="Loaded" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Children" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="RequestedTheme" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Source" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Card_Campaign.CampaignMainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />
       <RootProperty Name="Height" />
@@ -462,19 +494,6 @@
       <RootMethod Name="SetToolTip" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
-    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Orientation" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Children" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Visibility" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="BorderBrush" />
-      <RootProperty Name="BorderThickness" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ParallaxView">
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
@@ -519,11 +538,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Page">
-      <RootProperty Name="Content" />
-      <RootProperty Name="Resources" />
-      <RootEvent Name="Loaded" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
       <RootProperty Name="Header" />
       <RootProperty Name="Content" />
@@ -558,11 +572,6 @@
       <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.NavigationThemeTransition" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Image">
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Source" />
-    </RootType>
     <RootType FullName="Card_Campaign.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Flyout">
       <RootProperty Name="LightDismissOverlayMode" />

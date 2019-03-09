@@ -520,6 +520,12 @@
     <AppxPackagedFile Include="C:\Users\kisai\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.0.1\runtimes\win10-x86\lib\uap10.0.15138\netstandard.dll">
       <PackagePath>netstandard.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\Assets\Banner_1.jpg">
+      <PackagePath>Assets\Banner_1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\Assets\Banner_2.jpg">
+      <PackagePath>Assets\Banner_2.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\Assets\BottomPattern.png">
       <PackagePath>Assets\BottomPattern.png</PackagePath>
     </AppxPackagedFile>
@@ -567,6 +573,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\CampaignMainPage.xbf">
+      <PackagePath>CampaignMainPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\Controls\BaseCard.xbf">
       <PackagePath>Controls\BaseCard.xbf</PackagePath>

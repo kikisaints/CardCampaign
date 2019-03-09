@@ -95,6 +95,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CampaignMainPage.xaml.cs">
+      <DependentUpon>CampaignMainPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\BaseCard.xaml.cs">
       <DependentUpon>BaseCard.xaml</DependentUpon>
     </Compile>
@@ -153,6 +156,8 @@
     <None Include="Properties\app.manifest" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Banner_1.jpg" />
+    <Content Include="Assets\Banner_2.jpg" />
     <Content Include="Assets\BottomPattern.png" />
     <Content Include="Monsters.xml" />
     <Content Include="Assets\RedDragon_Larger.png" />
@@ -171,6 +176,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="CampaignMainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\BaseCard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

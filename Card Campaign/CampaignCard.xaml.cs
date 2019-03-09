@@ -4,9 +4,12 @@ using System.IO;
 using System.Linq;
 using System.Numerics;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI;
+using Windows.UI.Core;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -80,6 +83,30 @@ namespace Card_Campaign
         private void RootGrid_RightTapped(object sender, RightTappedRoutedEventArgs e)
         {
             FlyoutBase.ShowAttachedFlyout((FrameworkElement)sender);
+        }
+
+        async void ShowCampaignWindow_Click(object sender, RoutedEventArgs e)
+        {
+            CoreApplicationView newCoreView = CoreApplication.CreateNewView();
+
+            ApplicationView newAppView = null;
+            int mainViewId = ApplicationView.GetApplicationViewIdForWindow(
+              CoreApplication.MainView.CoreWindow);
+
+            await newCoreView.Dispatcher.RunAsync(
+              CoreDispatcherPriority.Normal,
+              () =>
+              {
+                  newAppView = ApplicationView.GetForCurrentView();
+                  Window.Current.Content = new CampaignMainPage();
+                  Window.Current.Activate();
+              });
+
+            await ApplicationViewSwitcher.TryShowAsStandaloneAsync(
+              newAppView.Id,
+              ViewSizePreference.UseHalf,
+              mainViewId,
+              ViewSizePreference.UseHalf);
         }
     }
 }

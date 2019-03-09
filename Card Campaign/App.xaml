@@ -19,6 +19,8 @@
 
                     <SolidColorBrush x:Key="FlyoutLightDismissOverlayBackground" Color="Black" Opacity="0.3"/>
 
+                    <SolidColorBrush x:Key="SmallButtonTransparency" Color="#BF000000"/>
+
                     <RevealBorderBrush x:Key="SystemControlBackgroundTransparentRevealBorderBrush" TargetTheme="Dark" Color="Transparent" FallbackColor="Transparent" />
                     <RevealBorderBrush x:Key="SystemControlHighlightAltTransparentRevealBorderBrush" TargetTheme="Dark" Color="Transparent" FallbackColor="Transparent" />
 

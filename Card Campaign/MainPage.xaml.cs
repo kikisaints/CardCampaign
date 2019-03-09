@@ -51,6 +51,7 @@ namespace Card_Campaign
             titleBar.ButtonHoverForegroundColor = Windows.UI.Colors.Black;
             titleBar.ButtonPressedForegroundColor = Windows.UI.Colors.Black;
             titleBar.ButtonPressedBackgroundColor = Windows.UI.Colors.Transparent;
+            titleBar.ButtonInactiveBackgroundColor = Windows.UI.Colors.Transparent;
             titleBar.ForegroundColor = Windows.UI.Colors.DarkGray;
 
             Window.Current.SetTitleBar(OverrideTitleBar);
