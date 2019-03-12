@@ -5,6 +5,7 @@
     xmlns:local="using:Card_Campaign"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local1="using:Card_Campaign.Controls"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -27,20 +28,21 @@
         <Grid Grid.Row="0" x:Name="OverrideTitleBar" HorizontalAlignment="Stretch" Height="200" Width="Auto" 
             VerticalAlignment="Top" Background="{ThemeResource SystemControlTransparentBrush}" Margin="0,0,0,0"/>
 
-        
         <Grid Grid.Row="1" x:Name="rowRoot">
             <ScrollViewer VerticalScrollMode="Enabled" Height="{Binding Path=Height, ElementName=rowRoot}">
                 <StackPanel x:Name="Dashboard">
-                    <TextBlock Text="Dashboard" Style="{ThemeResource SubtitleTextBlockStyle}" Margin="30, 10"/>
-
+                    <Grid HorizontalAlignment="Stretch">
+                        <TextBlock Text="Dashboard" Style="{ThemeResource SubtitleTextBlockStyle}" Margin="30, 10"/>
+                        <HyperlinkButton Content="Open GM Binder" VerticalAlignment="Center"
+                                         Margin="30, 10" HorizontalAlignment="Right"/>
+                    </Grid>
                     <TextBlock Text="Player Characters" Style="{ThemeResource BaseTextBlockStyle}" Margin="30, 10"/>
-                    <ScrollViewer HorizontalScrollMode="Enabled" VerticalScrollMode="Disabled">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Margin="30">PC 1</TextBlock>
-                            <TextBlock Margin="30">PC 2</TextBlock>
-                            <TextBlock Margin="30">PC 3</TextBlock>
-                        </StackPanel>
-                    </ScrollViewer>
+                    <GridView ItemContainerStyle="{StaticResource noTiltListItem}" x:Name="pcCardList" Padding="0, 0, 0, -20">
+                            <local1:PCCard SetClassIcon="Paladin"/>
+                            <local1:PCCard SetClassIcon="Warlock"/>
+                            <local1:PCCard SetClassIcon="Ranger"/>
+                            <local1:PCCard SetClassIcon="Barbarian"/>
+                    </GridView>
 
                     <TextBlock Text="Non-Player Characters" Style="{ThemeResource BaseTextBlockStyle}" Margin="30, 10"/>
                     <ScrollViewer HorizontalScrollMode="Enabled" VerticalScrollMode="Disabled">

@@ -1,0 +1,150 @@
+﻿<UserControl
+    x:Class="Card_Campaign.Controls.PCCard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Card_Campaign.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="247"
+    d:DesignWidth="373">
+
+    <UserControl.Resources>
+    </UserControl.Resources>
+
+    <Grid x:ConnectionId='1' x:Name="RootGrid" Background="#fffefefe" CornerRadius="10" BorderThickness="1" BorderBrush="#30858585" Width="373" Height="200">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <local:ClassIconPicker x:ConnectionId='2' Grid.Row="0" Grid.Column="0" x:Name="classIcon" Margin="5"/>
+
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <TextBlock Text="First LastName"/>
+            <TextBlock Text="Class Race Gender Age Level" Style="{ThemeResource CaptionTextBlockStyle}"/>
+        </StackPanel>
+        
+        <Grid x:ConnectionId='3' x:Name="stats"  Grid.Row="1" Grid.Column="1" BorderThickness="0,0,0,1" BorderBrush="{ThemeResource UserSelectedCardColorLow}">
+            <Grid.Resources>
+                <Thickness x:Key="statMargins">12,3</Thickness>
+            </Grid.Resources>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid x:ConnectionId='4' x:Name="strGrid"
+                  Grid.Column="0">
+                <StackPanel>
+                    <TextBlock Text="STR" 
+                               Margin="{StaticResource statMargins}" 
+                               Style="{ThemeResource CaptionTextBlockStyle}" 
+                               Foreground="{ThemeResource UserSelectedCardBrush}"/>
+                    <TextBlock x:ConnectionId='15' x:Name="strStat"
+                               Text="00 (+00)" 
+                               Style="{ThemeResource CaptionTextBlockStyle}" 
+                               TextAlignment="Center" 
+                               HorizontalAlignment="Center"
+                               Margin="0,-7,0,3"
+                               TextWrapping="WrapWholeWords"
+                               Width="30"/>
+                </StackPanel>
+            </Grid>
+            <Grid x:ConnectionId='5' x:Name="dexGrid"
+                  Grid.Column="1">
+                <StackPanel>
+                    <TextBlock Text="DEX" 
+                               Margin="{StaticResource statMargins}" 
+                               Style="{ThemeResource CaptionTextBlockStyle}" 
+                               Foreground="{ThemeResource UserSelectedCardBrush}"/>
+                    <TextBlock x:ConnectionId='14' x:Name="dexStat"
+                               Text="00 (+00)" 
+                               Style="{ThemeResource CaptionTextBlockStyle}" 
+                               TextAlignment="Center" 
+                               HorizontalAlignment="Center"
+                               Margin="0,-7,0,3"
+                               TextWrapping="WrapWholeWords"
+                               Width="30"/>
+                </StackPanel>
+            </Grid>
+            <Grid x:ConnectionId='6' x:Name="conGrid"
+                  Grid.Column="2">
+                <StackPanel>
+                    <TextBlock Text="CON"
+                               Margin="{StaticResource statMargins}" 
+                               Style="{ThemeResource CaptionTextBlockStyle}" 
+                               Foreground="{ThemeResource UserSelectedCardBrush}"/>
+                    <TextBlock x:ConnectionId='13' x:Name="conStat"
+                               Text="00 (+00)" 
+                               Style="{ThemeResource CaptionTextBlockStyle}" 
+                               TextAlignment="Center" 
+                               HorizontalAlignment="Center"
+                               Margin="0,-7,0,3"
+                               TextWrapping="WrapWholeWords"
+                               Width="30"/>
+                </StackPanel>
+            </Grid>
+            <Grid x:ConnectionId='7' x:Name="intGrid"
+                  Grid.Column="3">
+                <StackPanel>
+                    <TextBlock Text="INT" 
+                               Margin="{StaticResource statMargins}" 
+                               Style="{ThemeResource CaptionTextBlockStyle}" 
+                               Foreground="{ThemeResource UserSelectedCardBrush}"/>
+                    <TextBlock x:ConnectionId='12' x:Name="intStat"
+                               Text="00 (+00)" 
+                               Style="{ThemeResource CaptionTextBlockStyle}" 
+                               TextAlignment="Center" 
+                               HorizontalAlignment="Center"
+                               Margin="0,-7,0,3"
+                               TextWrapping="WrapWholeWords"
+                               Width="30"/>
+                </StackPanel>
+            </Grid>
+            <Grid x:ConnectionId='8' x:Name="wisGrid"
+                  Grid.Column="4">
+                <StackPanel>
+                    <TextBlock Text="WIS" 
+                               Margin="{StaticResource statMargins}" 
+                               Style="{ThemeResource CaptionTextBlockStyle}"
+                               Foreground="{ThemeResource UserSelectedCardBrush}"/>
+                    <TextBlock x:ConnectionId='11' x:Name="wisStat"
+                               Text="00 (+00)" 
+                               Style="{ThemeResource CaptionTextBlockStyle}" 
+                               TextAlignment="Center" 
+                               HorizontalAlignment="Center"
+                               Margin="0,-7,0,3"
+                               TextWrapping="WrapWholeWords"
+                               Width="30"/>
+                </StackPanel>
+            </Grid>
+            <Grid x:ConnectionId='9' x:Name="chaGrid"
+                  Grid.Column="5">
+                <StackPanel>
+                    <TextBlock Text="CHA" 
+                               Margin="{StaticResource statMargins}" 
+                               Style="{ThemeResource CaptionTextBlockStyle}" 
+                               Foreground="{ThemeResource UserSelectedCardBrush}"/>
+                    <TextBlock x:ConnectionId='10' x:Name="chaStat"
+                               Text="00 (+00)" 
+                               Style="{ThemeResource CaptionTextBlockStyle}" 
+                               TextAlignment="Center" 
+                               HorizontalAlignment="Center"
+                               Margin="0,-7,0,3"
+                               TextWrapping="WrapWholeWords"
+                               Width="30"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>
+

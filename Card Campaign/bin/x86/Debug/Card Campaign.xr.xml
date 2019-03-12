@@ -162,16 +162,16 @@
       <RootProperty Name="IsHoldingEnabled" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
-      <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="ItemContainerStyle" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Items" />
+      <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="Margin" />
       <RootProperty Name="FontFamily" />
-      <RootProperty Name="Items" />
       <RootProperty Name="SelectionMode" />
       <RootProperty Name="Style" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Padding" />
       <RootProperty Name="IsMultiSelectCheckBoxEnabled" />
       <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="Width" />
@@ -443,6 +443,15 @@
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
     </RootType>
+    <RootType FullName="Card_Campaign.Controls.PCCard">
+      <RootProperty Name="SetClassIcon" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
+      <RootProperty Name="Content" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Stretch" />
       <RootProperty Name="Source" />
@@ -521,6 +530,9 @@
       <RootProperty Name="ImageSource" />
     </RootType>
     <RootType FullName="Card_Campaign.Controls.BlankCampaignCard" />
+    <RootType FullName="Card_Campaign.Controls.ClassIconPicker">
+      <RootProperty Name="Margin" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="SelectionMode" />
       <RootProperty Name="Height" />
@@ -538,6 +550,10 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.WebView">
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="Card_Campaign.GMBinder_WebviewPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
       <RootProperty Name="Header" />
       <RootProperty Name="Content" />

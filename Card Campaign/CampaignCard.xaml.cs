@@ -87,6 +87,8 @@ namespace Card_Campaign
 
         async void ShowCampaignWindow_Click(object sender, RoutedEventArgs e)
         {
+            //BootGMBinderSite();
+
             CoreApplicationView newCoreView = CoreApplication.CreateNewView();
 
             ApplicationView newAppView = null;
@@ -99,6 +101,30 @@ namespace Card_Campaign
               {
                   newAppView = ApplicationView.GetForCurrentView();
                   Window.Current.Content = new CampaignMainPage();
+                  Window.Current.Activate();
+              });
+
+            await ApplicationViewSwitcher.TryShowAsStandaloneAsync(
+              newAppView.Id,
+              ViewSizePreference.UseHalf,
+              mainViewId,
+              ViewSizePreference.UseHalf);
+        }
+
+        async void BootGMBinderSite()
+        {
+            CoreApplicationView newCoreView = CoreApplication.CreateNewView();
+
+            ApplicationView newAppView = null;
+            int mainViewId = ApplicationView.GetApplicationViewIdForWindow(
+              CoreApplication.MainView.CoreWindow);
+
+            await newCoreView.Dispatcher.RunAsync(
+              CoreDispatcherPriority.Normal,
+              () =>
+              {
+                  newAppView = ApplicationView.GetForCurrentView();
+                  Window.Current.Content = new GMBinder_WebviewPage();
                   Window.Current.Activate();
               });
 
