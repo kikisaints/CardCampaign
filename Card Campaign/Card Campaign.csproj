@@ -175,6 +175,7 @@
     <Content Include="Assets\FighterIcon.png" />
     <Content Include="Assets\MonkIcon.png" />
     <Content Include="Assets\PaladinIcon.png" />
+    <Content Include="Assets\PlayerCard_InfoIconBGs.png" />
     <Content Include="Assets\RangerIcon.png" />
     <Content Include="Assets\RogueIcon.png" />
     <Content Include="Assets\SorcererIcon.png" />

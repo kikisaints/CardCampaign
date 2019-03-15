@@ -458,6 +458,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Card_Campaign.CampaignMainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">

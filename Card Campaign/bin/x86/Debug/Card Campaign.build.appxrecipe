@@ -550,6 +550,9 @@
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\Assets\PaladinIcon.png">
       <PackagePath>Assets\PaladinIcon.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\Assets\PlayerCard_InfoIconBGs.png">
+      <PackagePath>Assets\PlayerCard_InfoIconBGs.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\Assets\RangerIcon.png">
       <PackagePath>Assets\RangerIcon.png</PackagePath>
     </AppxPackagedFile>

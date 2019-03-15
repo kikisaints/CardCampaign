@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-03-11T23:23:43.535</Modified>
+      <Modified>2019-03-15T22:39:22.836</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\Card Campaign.exe">
       <PackagePath>entrypoint\Card Campaign.exe</PackagePath>
-      <Modified>2019-03-11T23:23:42.553</Modified>
+      <Modified>2019-03-15T22:39:21.642</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.0.1\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -734,6 +734,10 @@
       <PackagePath>Assets\PaladinIcon.png</PackagePath>
       <Modified>2019-03-08T20:38:44.622</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\Assets\PlayerCard_InfoIconBGs.png">
+      <PackagePath>Assets\PlayerCard_InfoIconBGs.png</PackagePath>
+      <Modified>2019-03-14T22:21:15.613</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\Assets\RangerIcon.png">
       <PackagePath>Assets\RangerIcon.png</PackagePath>
       <Modified>2019-03-08T20:38:44.630</Modified>
@@ -806,87 +810,87 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\Card Campaign.xr.xml">
       <PackagePath>Card Campaign.xr.xml</PackagePath>
-      <Modified>2019-03-11T17:08:30.696</Modified>
+      <Modified>2019-03-14T22:24:03.828</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.109</Modified>
+      <Modified>2019-03-15T22:39:21.103</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\CampaignMainPage.xbf">
       <PackagePath>CampaignMainPage.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.112</Modified>
+      <Modified>2019-03-15T22:39:21.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\Controls\BaseCard.xbf">
       <PackagePath>Controls\BaseCard.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.208</Modified>
+      <Modified>2019-03-15T22:39:21.232</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\CampaignCard.xbf">
       <PackagePath>CampaignCard.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.149</Modified>
+      <Modified>2019-03-15T22:39:21.158</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\Controls\BlankCampaignCard.xbf">
       <PackagePath>Controls\BlankCampaignCard.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.209</Modified>
+      <Modified>2019-03-15T22:39:21.233</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\Controls\ClassIconPicker.xbf">
       <PackagePath>Controls\ClassIconPicker.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.209</Modified>
+      <Modified>2019-03-15T22:39:21.234</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\Controls\MonsterCard.xbf">
       <PackagePath>Controls\MonsterCard.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.157</Modified>
+      <Modified>2019-03-15T22:39:21.168</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\Controls\MonsterDetails.xbf">
       <PackagePath>Controls\MonsterDetails.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.210</Modified>
+      <Modified>2019-03-15T22:39:21.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\Controls\PCCard.xbf">
       <PackagePath>Controls\PCCard.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.211</Modified>
+      <Modified>2019-03-15T22:39:21.174</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\DropShadowEffect.xbf">
       <PackagePath>DropShadowEffect.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.211</Modified>
+      <Modified>2019-03-15T22:39:21.236</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\GMBinder_WebviewPage.xbf">
       <PackagePath>GMBinder_WebviewPage.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.212</Modified>
+      <Modified>2019-03-15T22:39:21.237</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\HomePage.xbf">
       <PackagePath>HomePage.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.213</Modified>
+      <Modified>2019-03-15T22:39:21.237</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\LoadingPage.xbf">
       <PackagePath>LoadingPage.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.213</Modified>
+      <Modified>2019-03-15T22:39:21.238</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.214</Modified>
+      <Modified>2019-03-15T22:39:21.238</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\MonsterLogPage.xbf">
       <PackagePath>MonsterLogPage.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.172</Modified>
+      <Modified>2019-03-15T22:39:21.184</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\Controls\MonsterTag.xbf">
       <PackagePath>Controls\MonsterTag.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.215</Modified>
+      <Modified>2019-03-15T22:39:21.239</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\Controls\NewCampaignCard.xbf">
       <PackagePath>Controls\NewCampaignCard.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.194</Modified>
+      <Modified>2019-03-15T22:39:21.211</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\Controls\PlayerTag.xbf">
       <PackagePath>Controls\PlayerTag.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.216</Modified>
+      <Modified>2019-03-15T22:39:21.240</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\SettingsPage.xbf">
       <PackagePath>SettingsPage.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.205</Modified>
+      <Modified>2019-03-15T22:39:21.229</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\SpellLogPage.xbf">
       <PackagePath>SpellLogPage.xbf</PackagePath>
-      <Modified>2019-03-11T23:23:42.218</Modified>
+      <Modified>2019-03-15T22:39:21.241</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -894,11 +898,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-03-11T17:06:16.523</Modified>
+      <Modified>2019-03-14T22:24:06.137</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\Core\Card Campaign.exe">
       <PackagePath>Card Campaign.exe</PackagePath>
-      <Modified>2019-03-11T23:23:43.509</Modified>
+      <Modified>2019-03-15T22:39:22.811</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

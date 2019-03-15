@@ -147,9 +147,31 @@
             </Grid>
         </Grid>
 
-        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" Margin="10">
-            <Grid>
-                <Polygon Points="34,14 28,30 20,40 12,26 10,14 18,10" Fill="Transparent" Stroke="#80858585" StrokeThickness="2" />
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid VerticalAlignment="Center">
+                <Image Stretch="Fill" Width="256" Height="63" Source="/Assets/PlayerCard_InfoIconBGs.png" Margin="0, -20, 0, 0" />
+                <StackPanel VerticalAlignment="Bottom" Orientation="Horizontal">
+                    <StackPanel HorizontalAlignment="Left" Margin="18, 0, 0, 10">
+                        <TextBlock Text="00" FontSize="16" TextAlignment="Center"/>
+                        <TextBlock Text="AC" TextAlignment="Center"
+                               Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource UserSelectedCardBrush}"/>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Left" Margin="33, 0, 0, 10">
+                        <TextBlock Text="+00" TextAlignment="Center" FontSize="16"/>
+                        <TextBlock Text="Initiative" TextAlignment="Center"
+                               Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource UserSelectedCardBrush}"/>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Left" Margin="26, 0, 0, 10">
+                        <TextBlock Text="00 ft." FontSize="16" TextAlignment="Center"/>
+                        <TextBlock Text="Speed" TextAlignment="Center"
+                               Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource UserSelectedCardBrush}"/>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Left" Margin="33, 0, 0, 10" >
+                        <TextBlock Text="00" FontSize="16" TextAlignment="Center"/>
+                        <TextBlock Text="Health" TextAlignment="Center"
+                               Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource UserSelectedCardBrush}"/>
+                    </StackPanel>
+                </StackPanel>                
             </Grid>
         </StackPanel>
     </Grid>

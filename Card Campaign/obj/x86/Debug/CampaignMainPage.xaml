@@ -36,7 +36,7 @@
                         <HyperlinkButton Content="Open GM Binder" VerticalAlignment="Center"
                                          Margin="30, 10" HorizontalAlignment="Right"/>
                     </Grid>
-                    <TextBlock Text="Player Characters" Style="{ThemeResource BaseTextBlockStyle}" Margin="30, 10"/>
+                    <TextBlock Text="Players" Style="{ThemeResource BaseTextBlockStyle}" Margin="30, 10"/>
                     <GridView x:ConnectionId='5' ItemContainerStyle="{StaticResource noTiltListItem}" x:Name="pcCardList" Padding="0, 0, 0, -20">
                             <local1:PCCard SetClassIcon="Paladin"/>
                             <local1:PCCard SetClassIcon="Warlock"/>
@@ -44,14 +44,13 @@
                             <local1:PCCard SetClassIcon="Barbarian"/>
                     </GridView>
 
-                    <TextBlock Text="Non-Player Characters" Style="{ThemeResource BaseTextBlockStyle}" Margin="30, 10"/>
-                    <ScrollViewer HorizontalScrollMode="Enabled" VerticalScrollMode="Disabled">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Margin="30">NPC 1</TextBlock>
-                            <TextBlock Margin="30">NPC 2</TextBlock>
-                            <TextBlock Margin="30">NPC 3</TextBlock>
-                        </StackPanel>
-                    </ScrollViewer>
+                    <TextBlock Text="Non-Players" Style="{ThemeResource BaseTextBlockStyle}" Margin="30, 10"/>
+                    <GridView ItemContainerStyle="{StaticResource noTiltListItem}" Padding="0, 0, 0, -20">
+                        <local1:PCCard SetClassIcon="Rogue"/>
+                        <local1:PCCard SetClassIcon="Wizard"/>
+                        <local1:PCCard SetClassIcon="Sorcerer"/>
+                        <local1:PCCard SetClassIcon="Cleric"/>
+                    </GridView>
 
                     <TextBlock Text="Encounters" Style="{ThemeResource BaseTextBlockStyle}" Margin="30, 10"/>
                     <ScrollViewer HorizontalScrollMode="Enabled" VerticalScrollMode="Disabled">
