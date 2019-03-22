@@ -24,10 +24,59 @@ namespace Card_Campaign.Controls
             this.InitializeComponent();
         }
 
-        public string SetClassIcon
+        public string CharacterName
+        {
+            get { return charName.Text; }
+            set
+            {
+                charName.Text = (string)value;
+            }
+        }
+
+        public string PlayerName
+        {
+            get { return charPlayerName.Text; }
+            set
+            {
+                charPlayerName.Text = (string)value;
+            }
+        }
+
+        public string CharacterRace
+        {
+            get { return charRace.Text; }
+            set
+            {
+                charRace.Text = (string)value;
+            }
+        }
+
+        public string CharacterLevel
+        {
+            get { return charLevel.Text; }
+            set
+            {
+                charLevel.Text = (string)value;
+            }
+        }
+
+        public string CharacterAlignment
+        {
+            get { return charAlignment.Text; }
+            set
+            {
+                charAlignment.Text = (string)value;
+            }
+        }
+
+        public string Class
         {
             get { return classIcon.ClassIconType; }
-            set { classIcon.ClassIconType = (string)value; }
+            set
+            {
+                classIcon.ClassIconType = (string)value;
+                charClass.Text = (string)value;
+            }
         }
     }
 }

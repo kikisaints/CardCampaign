@@ -26,8 +26,14 @@
         <local:ClassIconPicker Grid.Row="0" Grid.Column="0" x:Name="classIcon" Margin="5"/>
 
         <StackPanel Grid.Row="0" Grid.Column="1" Margin="0, 10, 0, 0">
-            <TextBlock Text="First LastName"/>
-            <TextBlock Text="Class Race Gender Age Level" Style="{ThemeResource CaptionTextBlockStyle}"/>
+            <TextBlock x:Name="charName" Text="First LastName"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="charClass" Margin="3, 0" Text="Class" FontStyle="Italic" Style="{ThemeResource CaptionTextBlockStyle}"/>
+                <TextBlock x:Name="charRace" Margin="3, 0" Text="Race" FontStyle="Italic" Style="{ThemeResource CaptionTextBlockStyle}"/>
+                <TextBlock x:Name="charLevel" Margin="3, 0" Text="Level" FontStyle="Italic" Style="{ThemeResource CaptionTextBlockStyle}"/>
+                <TextBlock x:Name="charAlignment" Margin="3, 0" Text="Alignment" FontStyle="Italic" Style="{ThemeResource CaptionTextBlockStyle}"/>
+            </StackPanel>
+            <TextBlock x:Name="charPlayerName" Margin="3, -2, 0, 2" Text="Player Name" FontStyle="Italic" Opacity="0.60" Style="{ThemeResource CaptionTextBlockStyle}"/>
         </StackPanel>
         
         <Grid x:Name="stats" Margin="10, -5, 10, 15" Grid.Row="1" Grid.ColumnSpan="2" BorderThickness="0,0,0,1" 

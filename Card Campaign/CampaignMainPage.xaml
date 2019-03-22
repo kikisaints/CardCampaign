@@ -38,18 +38,20 @@
                     </Grid>
                     <TextBlock Text="Players" Style="{ThemeResource BaseTextBlockStyle}" Margin="30, 10"/>
                     <GridView ItemContainerStyle="{StaticResource noTiltListItem}" x:Name="pcCardList" Padding="0, 0, 0, -20">
-                            <local1:PCCard SetClassIcon="Paladin"/>
-                            <local1:PCCard SetClassIcon="Warlock"/>
-                            <local1:PCCard SetClassIcon="Ranger"/>
-                            <local1:PCCard SetClassIcon="Barbarian"/>
+                        <local1:PCCard Class="Barbarian" CharacterName="Willus Neemus" PlayerName="Ben"
+                                           CharacterAlignment="Lawful Neutral" CharacterRace="Human" CharacterLevel="2"/>
+                            <local1:PCCard Class="Warlock" CharacterName="Adrianna Lynn" PlayerName="Haley"
+                                           CharacterAlignment="Neutral Good" CharacterRace="Half Elf" CharacterLevel="1"/>
+                            <local1:PCCard Class="Ranger" CharacterName="Rang Cook" PlayerName="Eric"
+                                           CharacterAlignment="Chaotic Good" CharacterRace="Dwarf" CharacterLevel="4"/>
+                            <local1:PCCard Class="Wizard" CharacterName="Lupin" PlayerName="David"
+                                           CharacterAlignment="Neutral" CharacterRace="Halfling" CharacterLevel="1"/>
                     </GridView>
 
                     <TextBlock Text="Non-Players" Style="{ThemeResource BaseTextBlockStyle}" Margin="30, 10"/>
                     <GridView ItemContainerStyle="{StaticResource noTiltListItem}" Padding="0, 0, 0, -20">
-                        <local1:PCCard SetClassIcon="Rogue"/>
-                        <local1:PCCard SetClassIcon="Wizard"/>
-                        <local1:PCCard SetClassIcon="Sorcerer"/>
-                        <local1:PCCard SetClassIcon="Cleric"/>
+                        <local1:PCCard Class="Fighter"/>
+                        <local1:PCCard Class="Cleric"/>
                     </GridView>
 
                     <TextBlock Text="Encounters" Style="{ThemeResource BaseTextBlockStyle}" Margin="30, 10"/>
@@ -63,11 +65,14 @@
 
                     <TextBlock Text="Maps and Places" Style="{ThemeResource BaseTextBlockStyle}" Margin="30, 10"/>
                     <ScrollViewer HorizontalScrollMode="Enabled" VerticalScrollMode="Disabled">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Margin="30">PLACE 1</TextBlock>
-                            <TextBlock Margin="30">MAP 1</TextBlock>
-                            <TextBlock Margin="30">PLACE 3</TextBlock>
-                        </StackPanel>
+                        <GridView ItemContainerStyle="{StaticResource noTiltListItem}" x:Name="mpCardList" Padding="0, 0, 0, -20">
+                            <local1:MapsPlacesCard DiffcultyRating="1" MapName="Abandoned Ruins"
+                                                   NumberOfEncounters="3" NumberOfRepeatEncounters="1" NumberOfPlotPoints="1"/>
+                            <local1:MapsPlacesCard DiffcultyRating="5" MapName="Castle Confrontation"
+                                                   NumberOfEncounters="8" NumberOfRepeatEncounters="3" NumberOfPlotPoints="4"/>
+                            <local1:MapsPlacesCard DiffcultyRating="3" MapName="Valley Voyage"
+                                                   NumberOfEncounters="5" NumberOfRepeatEncounters="2" NumberOfPlotPoints="2"/>
+                        </GridView>
                     </ScrollViewer>
 
                     <TextBlock Text="NOTES" Style="{ThemeResource BaseTextBlockStyle}" Margin="30, 10"/>

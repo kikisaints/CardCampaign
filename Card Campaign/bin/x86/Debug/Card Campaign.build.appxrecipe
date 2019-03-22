@@ -526,6 +526,9 @@
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\Assets\Banner_2.jpg">
       <PackagePath>Assets\Banner_2.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\Assets\MapExample.jpg">
+      <PackagePath>Assets\MapExample.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\Assets\BarbarianIcon.png">
       <PackagePath>Assets\BarbarianIcon.png</PackagePath>
     </AppxPackagedFile>
@@ -627,6 +630,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\Controls\ClassIconPicker.xbf">
       <PackagePath>Controls\ClassIconPicker.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\Controls\MapsPlacesCard.xbf">
+      <PackagePath>Controls\MapsPlacesCard.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\Controls\MonsterCard.xbf">
       <PackagePath>Controls\MonsterCard.xbf</PackagePath>

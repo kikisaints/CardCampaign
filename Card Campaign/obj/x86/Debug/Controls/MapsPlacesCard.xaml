@@ -1,0 +1,61 @@
+﻿<UserControl
+    x:Class="Card_Campaign.Controls.MapsPlacesCard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Card_Campaign.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="373"
+    d:DesignWidth="247">
+
+    <UserControl.Resources>
+    </UserControl.Resources>
+
+    <Grid x:ConnectionId='1' x:Name="RootGrid" Background="#fffefefe" CornerRadius="10" BorderThickness="1" BorderBrush="#30858585" Width="247" Height="373" ToolTipService.ToolTip="{Binding ElementName=mapName, Path=Text}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image Grid.Row="0" Source="/Assets/MapExample.jpg"/>
+        <Grid Grid.Row="0" RequestedTheme="Dark" Background="{StaticResource SmallButtonTransparency}" CornerRadius="0, 5, 5, 0" Margin="0, 0, 0, 10" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+            <TextBlock x:ConnectionId='11' Grid.Row="0" x:Name="mapName" Text="Map Name" VerticalAlignment="Center" Margin="5"/>
+        </Grid>
+
+        <Grid Grid.Row="0" Background="{StaticResource SmallButtonTransparency}" CornerRadius="5, 0, 0, 5" Margin="0, 10, 0, 0" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <StackPanel x:ConnectionId='5' x:Name="StarList" Orientation="Horizontal" Margin="2">
+                <FontIcon x:ConnectionId='6' x:Name="star1" Glyph="&#xE735;" Foreground="White" FontSize="12" Margin="2"/>
+                <FontIcon x:ConnectionId='7' x:Name="star2" Visibility="Collapsed" Glyph="&#xE735;" Foreground="White" FontSize="12" Margin="2"/>
+                <FontIcon x:ConnectionId='8' x:Name="star3" Visibility="Collapsed" Glyph="&#xE735;" Foreground="White" FontSize="12" Margin="2"/>
+                <FontIcon x:ConnectionId='9' x:Name="star4" Visibility="Collapsed" Glyph="&#xE735;" Foreground="White" FontSize="12" Margin="2"/>
+                <FontIcon x:ConnectionId='10' x:Name="star5" Visibility="Collapsed" Glyph="&#xE735;" Foreground="White" FontSize="12" Margin="2"/>
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="1" Margin="15, 5, 5, 5">            
+            <StackPanel Orientation="Horizontal">
+                <SymbolIcon Symbol="Bullets" Margin="0, 0, 15, 0"/>
+                <StackPanel>
+                    <TextBlock x:ConnectionId='4' x:Name="numPlotPoints" Text="3"/>
+                    <TextBlock Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource SystemAccentColor}" Text="Plot Points"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <FontIcon Glyph="&#xEA5C;" Margin="0, 0, 15, 0"/>
+                <StackPanel>
+                    <TextBlock x:ConnectionId='3' x:Name="numEncounters" Text="10" />
+                    <TextBlock Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource SystemAccentColor}" Text="Encounters"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <FontIcon Glyph="&#xe895;" Margin="0, 0, 15, 0"/>
+                <StackPanel>
+                    <TextBlock x:ConnectionId='2' x:Name="numREncounters" Text="2"/>
+                    <TextBlock Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource SystemAccentColor}" Text="Random Encounters"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
+

@@ -110,6 +110,9 @@
     <Compile Include="Controls\ClassIconPicker.xaml.cs">
       <DependentUpon>ClassIconPicker.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\MapsPlacesCard.xaml.cs">
+      <DependentUpon>MapsPlacesCard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\MonsterCard.xaml.cs">
       <DependentUpon>MonsterCard.xaml</DependentUpon>
     </Compile>
@@ -173,6 +176,7 @@
     <Content Include="Assets\ClericIcon.png" />
     <Content Include="Assets\DruidIcon.png" />
     <Content Include="Assets\FighterIcon.png" />
+    <Content Include="Assets\MapExample.jpg" />
     <Content Include="Assets\MonkIcon.png" />
     <Content Include="Assets\PaladinIcon.png" />
     <Content Include="Assets\PlayerCard_InfoIconBGs.png" />
@@ -215,6 +219,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\ClassIconPicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\MapsPlacesCard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

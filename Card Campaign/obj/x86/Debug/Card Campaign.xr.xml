@@ -3,6 +3,7 @@
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="CompactPaneLength" />
     <RootPropertyPathName Name="Height" />
+    <RootPropertyPathName Name="Text" />
     <RootPropertyPathName Name="PlayerName" />
     <RootPropertyPathName Name="Width" />
   </Roots.PropertyPathNames>
@@ -387,6 +388,7 @@
       <RootProperty Name="FontStyle" />
       <RootProperty Name="Width" />
       <RootProperty Name="RequestedTheme" />
+      <RootProperty Name="Opacity" />
       <RootEvent Name="Tapped" />
       <RootEvent Name="PointerEntered" />
       <RootEvent Name="PointerExited" />
@@ -443,8 +445,20 @@
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
     </RootType>
+    <RootType FullName="Card_Campaign.Controls.MapsPlacesCard">
+      <RootProperty Name="DiffcultyRating" />
+      <RootProperty Name="MapName" />
+      <RootProperty Name="NumberOfEncounters" />
+      <RootProperty Name="NumberOfRepeatEncounters" />
+      <RootProperty Name="NumberOfPlotPoints" />
+    </RootType>
     <RootType FullName="Card_Campaign.Controls.PCCard">
-      <RootProperty Name="SetClassIcon" />
+      <RootProperty Name="Class" />
+      <RootProperty Name="CharacterName" />
+      <RootProperty Name="PlayerName" />
+      <RootProperty Name="CharacterAlignment" />
+      <RootProperty Name="CharacterRace" />
+      <RootProperty Name="CharacterLevel" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
       <RootProperty Name="Content" />
@@ -513,6 +527,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
       <RootProperty Name="Symbol" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.FlyoutBase">
       <RootMethod Name="GetAttachedFlyout" />

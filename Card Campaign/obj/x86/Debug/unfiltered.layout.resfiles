@@ -8,6 +8,7 @@ Assets\ClericIcon.png
 Assets\DruidIcon.png
 Assets\FighterIcon.png
 Assets\LockScreenLogo.scale-200.png
+Assets\MapExample.jpg
 Assets\MonkIcon.png
 Assets\PaladinIcon.png
 Assets\PlayerCard_InfoIconBGs.png
@@ -31,6 +32,7 @@ Card Campaign.xr.xml
 Controls\BaseCard.xbf
 Controls\BlankCampaignCard.xbf
 Controls\ClassIconPicker.xbf
+Controls\MapsPlacesCard.xbf
 Controls\MonsterCard.xbf
 Controls\MonsterDetails.xbf
 Controls\MonsterTag.xbf

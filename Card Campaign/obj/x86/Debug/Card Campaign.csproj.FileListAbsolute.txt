@@ -1637,3 +1637,8 @@ C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\obj\x86\Debug\GMBinde
 C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\obj\x86\Debug\GMBinder_WebviewPage.g.cs
 C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\obj\x86\Debug\GMBinder_WebviewPage.xaml
 C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\obj\x86\Debug\GMBinder_WebviewPage.xbf
+C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\obj\x86\Debug\Controls\MapsPlacesCard.g.i.cs
+C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\obj\x86\Debug\Controls\MapsPlacesCard.g.cs
+C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\obj\x86\Debug\Controls\MapsPlacesCard.xaml
+C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\obj\x86\Debug\Controls\MapsPlacesCard.xbf
+C:\Users\kisai\Documents\GitHub\CardCampaign\Card Campaign\bin\x86\Debug\Controls\MapsPlacesCard.xbf
